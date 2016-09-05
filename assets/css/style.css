@@ -231,7 +231,6 @@ h1 {
 }
 
 .now__img_0, .now__img_1, .now__img_2, .now__img_3, .now__img_4, .now__img_37, .now__img_38, .now__img_39{
-  margin-left: 30px;
   width: 130px;
   height: 130px;
   background: url("../img/1.png") no-repeat center center;
@@ -239,7 +238,6 @@ h1 {
 }
 
 .now__img_11, .now__img_12, .now__img_35, .now__img_45, .now__img_47{
-  margin-left: 30px;
   width: 140px;
   height: 130px;
   background: url("../img/2.png") no-repeat center center;
@@ -247,7 +245,6 @@ h1 {
 }
 
 .now__img_29, .now__img_30, .now__img_40, .now__img_44{
-  margin-left: 30px;
   width: 130px;
   height: 130px;
   background: url("../img/3.png") no-repeat center center;
@@ -255,7 +252,6 @@ h1 {
 }
 
 .now__img_31, .now__img_32, .now__img_33, .now__img_34, .now__img_36{
-  margin-left: 30px;
   width: 130px;
   height: 130px;
   background: url("../img/4.png") no-repeat center center;
@@ -263,7 +259,6 @@ h1 {
 }
 
 .now__img_9, .now__img_19, .now__img_20, .now__img_21, .now__img_22, .now__img_23, .now__img_24, .now__img_25, .now__img_26, .now__img_27, .now__img_28{
-  margin-left: 30px;
   width: 130px;
   height: 92px;
   background: url("../img/5.png") no-repeat center center;
@@ -271,7 +266,6 @@ h1 {
 }
 
 .now__img_5, .now__img_6, .now__img_7, .now__img_8, .now__img_10, .now__img_13, .now__img_14, .now__img_15, .now__img_16, .now__img_17, .now__img_18, .now__img_41, .now__img_42, .now__img_43, .now__img_46{
-  margin-left: 30px;
   width: 140px;
   height: 130px;
   background: url("../img/6.png") no-repeat center center;
@@ -489,6 +483,10 @@ h1 {
 
   h1{
     margin-bottom: 20px;
+  }
+
+  .weather__minmax {
+    margin-left: 0px;
   }
 
   .weather__item {
