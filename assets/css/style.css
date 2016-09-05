@@ -216,8 +216,8 @@ h1 {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -487,6 +487,10 @@ h1 {
 
   .weather__minmax {
     margin-left: 0px;
+  }
+
+  .weather__num {
+        margin-left: 0px;
   }
 
   .weather__item {
