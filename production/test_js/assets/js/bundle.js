@@ -23,6 +23,7 @@ Valid.prototype.ValidPhone = function() {
         title.style.background = '#f1faf8';
         cover.style.border = 'solid 1px #15b284'
     }else {
+        title.style.background = '#f8f8f8';
         cover.style.border = 'solid 1px red'
     }
 };
@@ -37,6 +38,7 @@ Valid.prototype.ValidMail = function() {
         title.style.background = '#f1faf8';
         cover.style.border = 'solid 1px #15b284'
     }else {
+        title.style.background = '#f8f8f8';
         cover.style.border = 'solid 1px red'
     }
 };
@@ -46,12 +48,14 @@ Valid.prototype.ValidPass = function() {
         conf = document.getElementById('conf').value;
         cover = document.querySelectorAll('.pass'),
         title = document.querySelectorAll('.pass_t');
-    if(pass == conf) {
+    if(pass == conf & pass != '') {
         title[0].style.background = '#f1faf8';
         cover[0].style.border = 'solid 1px #15b284';
         title[1].style.background = '#f1faf8';
         cover[1].style.border = 'solid 1px #15b284';
     }else{
+        title[0].style.background = '#f8f8f8';
+        title[1].style.background = '#f8f8f8';
         cover[0].style.border = 'solid 1px red';
         cover[1].style.border = 'solid 1px red';
     }
