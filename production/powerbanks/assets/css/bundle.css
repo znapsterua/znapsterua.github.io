@@ -1794,42 +1794,42 @@ a {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
+    width: 100%;
   }
 
   .modals__order {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
+    width: 100%;
   }
 
   .modals__callback {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
+    width: 100%;
   }
 
   .modals__error {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
-  }
-
-  .modals__error {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
+    width: 100%;
   }
 
   .modals__success {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
+    width: 100%;
   }
 
   .modals__video {
     padding-left: 0px;
     padding-right: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 

@@ -202,27 +202,6 @@ new Modals(document.querySelectorAll('.modal-call'), document.querySelector('.mo
 new Modals(document.querySelectorAll('.modal-video-f'), document.querySelector('.video-f'));
 new Modals(document.querySelectorAll('.modal-video-s'), document.querySelector('.video-s'));
 
-function Width(modal) {
-    this.modal = modal;
-    this.helper();
-    this.change();
-}
-
-Width.prototype.helper = function() {
-    window.addEventListener('resize', this.change.bind(this));
-};
-
-Width.prototype.change = function() {
-    if(window.innerWidth < 630) {
-        for (var i = 0; i <= this.modal.children.length-1; i++) {
-            this.modal.children[i].style.width = '100%'
-        }
-    }
-};
-
-
-new Width(document.querySelector('.modals'));
-
 $(document).ready(function(){
             // Плавный скролл по якорям
             $('a[href^="#"]').click(function () { 
