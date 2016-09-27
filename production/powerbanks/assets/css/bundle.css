@@ -1552,6 +1552,10 @@ a {
 }
 
 @media (max-width: 960px) {
+  .modals__callback {
+    left: 0px
+  }
+
   .head__nav {
     display: none;
   }
