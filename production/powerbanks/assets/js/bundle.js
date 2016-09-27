@@ -213,7 +213,7 @@ Width.prototype.helper = function() {
 };
 
 Width.prototype.change = function() {
-    if(window.innerWidth < 640) {
+    if(window.innerWidth < 430) {
         for (var i = 0; i <= this.modal.children.length-1; i++) {
             this.modal.children[i].style.width = '100%'
         }
