@@ -180,8 +180,8 @@ Modals.prototype.show = function() {
         $('#dark').remove();
     }
     $('body').append('<div id="dark"></div>');
-    document.getElementById("play1").setAttribute('src', this.src1);
-    document.getElementById("play2").setAttribute('src', this.src2);
+    // document.getElementById("play1").setAttribute('src', this.src1);
+    // document.getElementById("play2").setAttribute('src', this.src2);
     for (var i = 0; i <= document.querySelector('.modals').children.length-1; i++) {
         document.querySelector('.modals').children[i].style.display = 'none';
     }
@@ -193,8 +193,8 @@ Modals.prototype.show = function() {
 };
 
 Modals.prototype.closeF = function() {
-    document.getElementById("play1").setAttribute('src', '');
-    document.getElementById("play2").setAttribute('src', '');
+    // document.getElementById("play1").setAttribute('src', '');
+    // document.getElementById("play2").setAttribute('src', '');
     $('#dark').remove();
     this.modal.style.display = 'none';
 };
