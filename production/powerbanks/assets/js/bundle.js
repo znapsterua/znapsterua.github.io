@@ -180,7 +180,7 @@ Modals.prototype.show = function() {
         $('#dark').remove();
     }
     $('body').append('<div id="dark"></div>');
-    if(this.link[0] == document.querySelector('.modal-video-f') || this.link[1] == document.querySelector('.modal-video-s')){
+    if(this.link[0] == document.querySelector('.modal-video-f') || this.link[0] == document.querySelector('.modal-video-s')){
 	    document.getElementById("play1").setAttribute('src', this.src1);
 	    document.getElementById("play2").setAttribute('src', this.src2);
 	}
@@ -195,7 +195,7 @@ Modals.prototype.show = function() {
 };
 
 Modals.prototype.closeF = function() {
-	if(this.link[0] == document.querySelector('.modal-video-f') || this.link[1] == document.querySelector('.modal-video-s')){
+	if(this.link[0] == document.querySelector('.modal-video-f') || this.link[0] == document.querySelector('.modal-video-s')){
 	    document.getElementById("play1").setAttribute('src', '');
     	document.getElementById("play2").setAttribute('src', '');
 	}
