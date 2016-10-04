@@ -181,8 +181,8 @@ Modals.prototype.show = function() {
     }
     $('body').append('<div id="dark"></div>');
     if(document.querySelector('.box__youtube')){
-       document.getElementById("play1").attr('src', this.src1);
-       document.getElementById("play2").attr('src', this.src2);
+       document.getElementById("play1").setAttribute('src', this.src1);
+       document.getElementById("play2").setAttribute('src', this.src2);
     }
     for (var i = 0; i <= document.querySelector('.modals').children.length-1; i++) {
         document.querySelector('.modals').children[i].style.display = 'none';
