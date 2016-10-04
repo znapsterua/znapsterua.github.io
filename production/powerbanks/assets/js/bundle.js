@@ -193,10 +193,8 @@ Modals.prototype.show = function() {
 };
 
 Modals.prototype.closeF = function() {
-    if($('.box__youtube')){
-       $('#play1').attr('src', '');
-       $('#play2').attr('src', '');
-    }
+    document.getElementById("play1").setAttribute('src', '');
+    document.getElementById("play2").setAttribute('src', '');
     $('#dark').remove();
     this.modal.style.display = 'none';
 };
