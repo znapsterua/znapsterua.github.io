@@ -180,9 +180,9 @@ Modals.prototype.show = function() {
         $('#dark').remove();
     }
     $('body').append('<div id="dark"></div>');
-    if($('.box__youtube')){
-       $('#play1').attr('src', this.src1);
-       $('#play2').attr('src', this.src2);
+    if(document.querySelector('.box__youtube')){
+       document.getElementById("play1").attr('src', this.src1);
+       document.getElementById("play2").attr('src', this.src2);
     }
     for (var i = 0; i <= document.querySelector('.modals').children.length-1; i++) {
         document.querySelector('.modals').children[i].style.display = 'none';
