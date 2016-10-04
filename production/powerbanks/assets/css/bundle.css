@@ -154,6 +154,7 @@ a {
 .bg-img {
   width: 100%;
   height: 100vh;
+  max-height: 700px;
   min-height: 600px;
   background: url("../img/compressed/bg_img.jpg") no-repeat center center;
   background-size: cover;
@@ -203,8 +204,12 @@ a {
   width: 100%;
   height: 100%;
   background: #252525;
-  opacity: 0.4;
+  opacity: 0.75;
   z-index: 9;
+}
+
+.modal-close {
+  cursor: pointer;
 }
 
 .head__menu_mob {
@@ -313,7 +318,7 @@ a {
 }
 
 .content__main {
-  margin-top: 220px;
+  margin-top: 240px;
 }
 
 .main__title {
@@ -352,12 +357,14 @@ a {
 .fixed-nav {
   position: fixed;
   width: 100%;
+  height: 0px;
   background-color: #000;
   z-index: 10;
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .padding-nav {
@@ -1063,10 +1070,10 @@ a {
 }
 
 .modals__details {
-  position: fixed;
-  padding: 30px 20px;
   display: none;
+  position: fixed;
   top: 10px;
+  padding: 30px 20px;
   max-width: 640px;
   background-color: #fff;
   -webkit-box-shadow: -3px 0px 12px -2px rgba(0,0,0,0.75);
@@ -1788,48 +1795,6 @@ a {
   .box__youtube {
     width: 350px;
     height: 220px;
-  }
-
-  .modals__details {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
-  }
-
-  .modals__order {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
-  }
-
-  .modals__callback {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
-  }
-
-  .modals__error {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
-  }
-
-  .modals__success {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
-  }
-
-  .modals__video {
-    padding-left: 0px;
-    padding-right: 0px;
-    left: 0px;
-    width: 100%;
   }
 }
 
