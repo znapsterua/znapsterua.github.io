@@ -1072,7 +1072,7 @@ a {
 .modals__details {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   padding: 30px 20px;
   max-width: 640px;
   background-color: #fff;
@@ -1254,7 +1254,7 @@ a {
 .modals__order {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   max-width: 640px;
   text-align: center;
   background-color: #000;
@@ -1376,7 +1376,7 @@ a {
   display: none;
   position: fixed;
   padding: 20px;
-  top: 10px;
+  top: 20px;
   max-width: 640px;
   text-align: center;
   background-color: #000;
@@ -1392,7 +1392,7 @@ a {
 .modals__error {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   max-width: 640px;
   text-align: center;
   background-color: #fff;
@@ -1510,7 +1510,7 @@ a {
 .modals__success {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   max-width: 640px;
   text-align: center;
   background-color: #fff;
@@ -1544,7 +1544,7 @@ a {
   display: none;
   position: fixed;
   padding: 30px;
-  top: 10px;
+  top: 20px;
   max-width: 640px;
   text-align: center;
   background-color: #fff;
