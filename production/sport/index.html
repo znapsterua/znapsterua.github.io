@@ -8,6 +8,63 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
 </head>
 <body>
+	<div class="modals">
+		<div class="modals__menu">
+			<div class="menu__dark"></div>
+			<div class="menu__content">
+				<div class="content__close">
+					<div class="close__box">
+						<span class="close__line"></span>
+						<span class="close__line"></span>
+					</div>
+				</div>
+				<div class="content__navi">
+					<ul class="navi__list">
+						<li class="list__sections"><a href="#training" class="sections__link">Training Program</a></li>
+						<li class="list__sections"><a href="#camp" class="sections__link">Camp</a></li>
+						<li class="list__sections"><a href="#contact" class="sections__link">CONTACTS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="modals__send">
+			<div class="send__close">
+				<p class="close__word">close</p>
+			</div>
+			<div class="send__content content-x">
+				<div class="content__req_title">
+					<p class="req__top">Send</p>
+					<p class="req__bottom">REQUEST</p>
+				</div>
+				<div class="content__form send__req-modal">
+					<form class="form">
+						<div class="cover__input form_all_f input_send">
+							<span class="input__text form_span_f">Name</span>
+							<input type="text" name="name" class="input__place form_input_f">
+						</div>
+						<div class="cover__input form_all_s input_send">
+							<span class="input__text form_span_s">Email Address</span>
+							<input type="text" name="email" class="input__place form_input_s">
+						</div>
+						<div class="cover__input form_all_t input_send">
+							<span class="input__text form_span_t">Message</span>
+							<textarea type="text" name="message" class="text-area input__place form_input_t"></textarea>
+						</div>
+					</form>
+					<div class="form__lang">
+						<p class="lang__title">Language</p>
+						<div class="lang__box">
+							<label class="box__en options">En</label>
+							<label class="box__ru options">Ru</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="send__submit">
+				<p class="submit__text">submit</p>
+			</div>
+		</div>
+	</div>
 	<header id="header" class="head">
 		<div class="border-block">
 			<div class="content-x block-nav">
@@ -17,7 +74,7 @@
 						<span class="gumb__line"></span>
 						<span class="gumb__line"></span>
 					</div>
-					<a href="#" class="nav__program">Training Program</a>
+					<a href="#training" class="nav__program">Training Program</a>
 				</div>
 				<div class="logo">
 					<div class="logo-position">
@@ -54,7 +111,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="rates clearfix">
+	<section id="training" class="rates clearfix">
 		<div class="content-x">
 			<h2 class="rates__title">CHOOSE <span class="red-part">YOUR</span> TRAINING PLAN</h2>
 			<div class="rates__block">
@@ -195,7 +252,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="camp">
+	<section id="camp" class="camp">
 		<div class="camp__title content-x">
 			<h3 class="title__top">TOROKHTIY <span class="red-color">CAMP</span></h3>
 		</div>
@@ -331,7 +388,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="gray-color">
+	<footer id="contact" class="gray-color">
 		<div class="contact content-x white-bg">
 			<div class="contact__head">
 				<div class="head__title_contact">Contact me</div>
@@ -400,63 +457,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modals">
-		<div class="modals__menu">
-			<div class="menu__dark"></div>
-			<div class="menu__content">
-				<div class="content__close">
-					<div class="close__box">
-						<span class="close__line"></span>
-						<span class="close__line"></span>
-					</div>
-				</div>
-				<div class="content__navi">
-					<ul class="navi__list">
-						<li class="list__sections"><a href="#" class="sections__link">Training Program</a></li>
-						<li class="list__sections"><a href="#" class="sections__link">Camp</a></li>
-						<li class="list__sections"><a href="#" class="sections__link">CONTACTS</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="modals__send">
-			<div class="send__close">
-				<p class="close__word">close</p>
-			</div>
-			<div class="send__content content-x">
-				<div class="content__req_title">
-					<p class="req__top">Send</p>
-					<p class="req__bottom">REQUEST</p>
-				</div>
-				<div class="content__form">
-					<form class="form">
-						<div class="cover__input form_all_f input_send">
-							<span class="input__text form_span_f">Name</span>
-							<input type="text" name="name" class="input__place form_input_f">
-						</div>
-						<div class="cover__input form_all_s input_send">
-							<span class="input__text form_span_s">Email Address</span>
-							<input type="text" name="email" class="input__place form_input_s">
-						</div>
-						<div class="cover__input form_all_t input_send">
-							<span class="input__text form_span_t">Message</span>
-							<textarea type="text" name="message" class="text-area input__place form_input_t"></textarea>
-						</div>
-					</form>
-					<div class="form__lang">
-						<p class="lang__title">Language</p>
-						<div class="lang__box">
-							<label class="box__en">En</label>
-							<label class="box__ru">Ru</label>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="send__submit">
-				<p class="submit__text">submit</p>
-			</div>
-		</div>
-	</div>
+<script type="text/javascript" src="assets/js/jquery.1.7.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bundle.js"></script>
 </body>
 </html>
