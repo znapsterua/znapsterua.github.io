@@ -958,12 +958,13 @@ a {
 }
 
 .camp__title {
-  position: relative;
-  padding-bottom: 70px;
-  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 70px;
+  text-align: center;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
