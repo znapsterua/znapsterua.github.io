@@ -20,6 +20,8 @@ Fixed.prototype.move = function() {
                 this.header.style.top = '';
                 this.header.classList.remove("fixed-nav");
             }
+        }else{
+             this.header.classList.remove("fixed-nav");
         }
 };
 
@@ -113,19 +115,76 @@ Form.prototype.move = function(event) {
     var target = event.target;
     if(target == this.all || target == this.span || target == this.input){
         this.input.focus();
-        this.span.style.fontSize = '13px'
-        this.span.style.color = '#939393'
-        this.span.style.top = '-17px'
+        this.span.style.fontSize = '13px';
+        this.span.style.color = '#939393';
+        this.span.style.top = '-17px';
     } else if(this.input.value == ''){
-        this.span.style.fontSize = '18px'
-        this.span.style.color = 'black'
-        this.span.style.top = '3px'
+        this.span.style.fontSize = '18px';
+        this.span.style.color = 'black';
+        this.span.style.top = '3px';
     }
 };
 
-new Form(document.querySelector('.form_all_a'), document.querySelector('.form_span_a'), document.querySelector('.form_input_a'))
-new Form(document.querySelector('.form_all_b'), document.querySelector('.form_span_b'), document.querySelector('.form_input_b'))
-new Form(document.querySelector('.form_all_c'), document.querySelector('.form_span_c'), document.querySelector('.form_input_c'))
-new Form(document.querySelector('.form_all_f'), document.querySelector('.form_span_f'), document.querySelector('.form_input_f'))
-new Form(document.querySelector('.form_all_s'), document.querySelector('.form_span_s'), document.querySelector('.form_input_s'))
-new Form(document.querySelector('.form_all_t'), document.querySelector('.form_span_t'), document.querySelector('.form_input_t'))
+new Form(document.querySelector('.form_all_a'), document.querySelector('.form_span_a'), document.querySelector('.form_input_a'));
+new Form(document.querySelector('.form_all_b'), document.querySelector('.form_span_b'), document.querySelector('.form_input_b'));
+new Form(document.querySelector('.form_all_c'), document.querySelector('.form_span_c'), document.querySelector('.form_input_c'));
+new Form(document.querySelector('.form_all_f'), document.querySelector('.form_span_f'), document.querySelector('.form_input_f'));
+new Form(document.querySelector('.form_all_s'), document.querySelector('.form_span_s'), document.querySelector('.form_input_s'));
+new Form(document.querySelector('.form_all_t'), document.querySelector('.form_span_t'), document.querySelector('.form_input_t'));
+
+function Nav(modal, text, btn, close) {
+    this.modal = modal;
+    this.text = text;
+    this.btn = btn;
+    this.close = close;
+    this.helper();
+}
+
+Nav.prototype.helper = function() {
+    this.btn.addEventListener('click', this.show.bind(this));
+};
+
+Nav.prototype.show = function() {
+    var i = 0,
+        that = this;
+    if(window.innerWidth > '750'){
+        this.modal.style.display = 'block';
+        setTimeout(function() {
+            for (i = 0; i <= that.text.length-1; i++) {
+            that.text[i].style.fontSize = '55px';
+            }
+        }, 50);
+    }else if(window.innerWidth <= '750'){
+        this.modal.style.display = 'block';
+        setTimeout(function() {
+            for (i = 0; i <= that.text.length-1; i++) {
+            that.text[i].style.fontSize = '40px';
+            }
+        }, 50);
+    }
+    this.listener();
+};
+
+Nav.prototype.listener = function() {
+    this.close.addEventListener('click', this.hide.bind(this));
+};
+
+Nav.prototype.hide = function() {
+    var that = this;
+    if(window.innerWidth > '750'){
+        setTimeout(function() {
+            for (i = 0; i <= that.text.length-1; i++) {
+            that.text[i].style.fontSize = '40px';
+            }
+        }, 50);
+    }else if(window.innerWidth <= '750'){
+        setTimeout(function() {
+            for (i = 0; i <= that.text.length-1; i++) {
+            that.text[i].style.fontSize = '25px';
+            }
+        }, 50);
+    }
+    this.modal.style.display = 'none';
+};
+
+new Nav(document.querySelector('.modals__menu'), document.querySelectorAll('.sections__link'), document.querySelector('.nav__gumb'), document.querySelector('.content__close'));

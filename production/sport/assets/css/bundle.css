@@ -1948,13 +1948,13 @@ a {
 
 .sections__link {
   font-family: Montserrat-Bold, Arial, sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   line-height: 43px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #fff;
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
+  -webkit-transition: font-size linear 0.2s;
+  transition: font-size linear 0.2s;
 }
 
 .sections__link:hover {
@@ -1963,7 +1963,7 @@ a {
 
 .modals__send {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0px;
   width: 100%;
   height: 100vh;
@@ -2320,6 +2320,47 @@ a {
 
   .contact__main {
     width: 100%;
+  }
+
+  .send__submit {
+    height: 70px;
+  }
+
+  .send__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .send__close {
+    margin-bottom: 5vh;
+  }
+
+  .req__top {
+    font-size: 40px;
+    letter-spacing: 15px;
+    line-height: 45px;
+  }
+
+  .req__bottom {
+    margin-bottom: 40px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 45px;
+  }
+
+  .modals__send {
+    min-height: 640px;
+  }
+
+  .send__req-modal {
+    width: 80%;
   }
 }
 
@@ -2681,6 +2722,29 @@ a {
   input,
   textarea {
     font-size: 14px;
+  }
+
+  .sections__link {
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+
+  .content__close {
+    left: 30px;
+  }
+
+  .req__top {
+    font-size: 30px;
+    letter-spacing: 10px;
+    line-height: 35px;
+  }
+
+  .req__bottom {
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 35px;
   }
 }
 
