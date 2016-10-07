@@ -960,6 +960,7 @@ a {
 .camp__title {
   position: relative;
   margin-bottom: 70px;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
