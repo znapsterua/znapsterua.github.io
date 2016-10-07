@@ -2083,6 +2083,11 @@ a {
   background-color: #ddd;
 }
 
+.active-label {
+  color: #fff;
+  background-color: #df1f1f;
+}
+
 .send__submit {
   position: absolute;
   display: -webkit-box;

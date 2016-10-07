@@ -167,6 +167,9 @@ Nav.prototype.show = function() {
 
 Nav.prototype.listener = function() {
     this.close.addEventListener('click', this.hide.bind(this));
+    for (var i = 0; i <= this.text.length-1; i++) {
+        this.text[i].addEventListener('click', this.hide.bind(this));
+    }
 };
 
 Nav.prototype.hide = function() {
@@ -188,3 +191,65 @@ Nav.prototype.hide = function() {
 };
 
 new Nav(document.querySelector('.modals__menu'), document.querySelectorAll('.sections__link'), document.querySelector('.nav__gumb'), document.querySelector('.content__close'));
+
+function Popup(modal, btn, close) {
+    this.modal = modal;
+    this.btn = btn;
+    this.close = close;
+    this.helper();
+}
+
+Popup.prototype.helper = function() {
+    this.btn.addEventListener('click', this.show.bind(this)); 
+};
+
+Popup.prototype.show = function(event) {
+    document.body.scrollTop = 0;
+    this.modal.style.display = 'block';
+    this.listener();
+};
+
+Popup.prototype.listener = function(event) {
+    this.close.addEventListener('click', this.hide.bind(this));
+};
+
+Popup.prototype.hide = function(event) {
+    this.modal.style.display = 'none';
+};
+
+new Popup(document.querySelector('.modals__send'), document.querySelector('.connect__btn'), document.querySelector('.close__word'));
+
+function Option(label) {
+    this.label = label;
+    this.helper();
+}
+
+Option.prototype.helper = function() { 
+    for (var i = 0; i <= this.label.length-1; i++) {
+        this.label[i].addEventListener('click', this.check.bind(this));
+    }
+};
+
+Option.prototype.check = function(event) {
+    var target = event.target;
+    for (var i = 0; i <= this.label.length-1; i++) {
+        this.label[i].classList.remove("active-label");
+    }
+    target.classList.add("active-label");
+};
+
+new Option(document.querySelectorAll('.options'));
+
+$(document).ready(function(){
+            // Плавный скролл по якорям
+            $('a[href^="#"]').click(function () { 
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if($.browser.safari){
+                $('body').animate( { scrollTop: destination }, 1000 );
+                } else {
+                    $('html').animate( { scrollTop: destination }, 1000 );
+                }
+                return false;
+           });
+        });
