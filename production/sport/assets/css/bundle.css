@@ -973,7 +973,6 @@ a {
 }
 
 .title__top {
-  position: absolute;
   top: -18px;
   font-family: Montserrat-Bold, Arial, sans-serif;
   font-size: 32px;
