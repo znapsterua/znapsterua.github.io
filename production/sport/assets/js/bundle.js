@@ -84,7 +84,6 @@ function Slider() {
             childrenF = slides[2].children[0],
             childrenS = slides[0].children[0];
             if ((attr && attr == 'next') || target == childrenF || target == childrenF.children[1]) {
-                console.log(childrenS.children[1]);
             var firstChild = this.slider.firstElementChild,
                 cloned = firstChild.cloneNode(true);
             this.slider.appendChild(cloned);
@@ -217,7 +216,7 @@ Popup.prototype.hide = function(event) {
     this.modal.style.display = 'none';
 };
 
-new Popup(document.querySelector('.modals__send'), document.querySelector('.connect__btn'), document.querySelector('.close__word'));
+new Popup(document.querySelector('.modals__send'), document.querySelector('.connect__btn'), document.querySelector('.send__close'));
 
 function Option(label) {
     this.label = label;
