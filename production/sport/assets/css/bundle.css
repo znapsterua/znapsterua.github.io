@@ -2088,6 +2088,10 @@ a {
   background-color: #df1f1f;
 }
 
+.active-label:hover {
+  background-color: #df1f1f;
+}
+
 .send__submit {
   position: absolute;
   display: -webkit-box;
