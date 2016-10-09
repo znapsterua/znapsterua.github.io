@@ -2761,6 +2761,14 @@ a {
   .right__form {
     padding: 30px 0px;
     text-align: center;
-    width: 290px;
+    max-width: 290px;
+  }
+
+  .form_input_a {
+    max-width: 290px;
+  }
+
+  .form_input_b {
+    max-width: 290px;
   }
 }
