@@ -176,6 +176,7 @@ Modals.prototype.helper = function() {
 
 Modals.prototype.show = function() {
     var close = document.querySelectorAll('.modal-close');
+   	this.top = window.pageYOffset;
     if ($('#dark')){
         $('#dark').remove();
     }
@@ -201,13 +202,14 @@ Modals.prototype.closeF = function() {
 	}
     $('#dark').remove();
     this.modal.style.display = 'none';
+    document.body.scrollTop = this.top;
 };
 
-new Modals(document.querySelectorAll('.modal-detail'), document.querySelector('.modals__details'));
 new Modals(document.querySelectorAll('.modal-order'), document.querySelector('.modals__order'));
 new Modals(document.querySelectorAll('.modal-call'), document.querySelector('.modals__callback'));
 new Modals(document.querySelectorAll('.modal-video-f'), document.querySelector('.video-f'));
 new Modals(document.querySelectorAll('.modal-video-s'), document.querySelector('.video-s'));
+new Modals(document.querySelectorAll('.modal-detail'), document.querySelector('.modals__details'));
 
 $(document).ready(function(){
             // Плавный скролл по якорям

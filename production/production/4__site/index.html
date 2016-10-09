@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=width-device, initial-scale=1, maximum-scale=1"/>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<title>Document</title>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Coustard:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet"  href="css/styles.css">
+</head>
+<body>
+	<div class="wrapper">	
+		<header class="header">
+			<div class="container">
+				<nav class="main-nav navbar navbar-inverse navbar-fixed-top">
+					<a href="" class="navbar-brand logo-custom"><img src="images/logo.png" class="logo" alt="logo" height="33" width="131"></a>
+					<button class="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="nav-custom collapse navbar-collapse navHeaderCollapse">
+						<ul class=" nav navbar-nav navbar-right ">
+							<li><a href="#home" class="smooth-scroll">Home</a></li>
+							<li><a href="#home" class="smooth-scroll" >About</a></li>
+							<li><a href="#staff" class="smooth-scroll">Team</a></li>
+							<li><a href="#works" class="smooth-scroll">Portfolio</a></li>
+							<li><a href="#blog" class="smooth-scroll">Blog</a></li>
+							<li><a href="#shortcodes" class="smooth-scroll">Shortcodes</a></li>
+							<li><a href="#contact" class="smooth-scroll">Contact</a></li>
+						</ul>	
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="home" id="home">
+			<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+						    <img src="images/home.jpg" height="796" width="1200" alt="Chania">
+						</div>
+						<div class="item">
+						    <img src="images/home.jpg" height="796" width="1200" alt="Chania">
+						</div>
+					    <div class="item">
+					    	<img src="images/home.jpg" height="796" width="1200" alt="Chania">
+					    </div>
+				    	<div class="item">
+				      		<img src="images/home.jpg" height="796" width="1200" alt="Chania">
+				    	</div>
+					</div>
+				  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    	<span class="glyphicon btn-prev glyphicon-chevron-left" aria-hidden="true"></span>
+				    	<span class="sr-only">Previous</span>
+				  	</a>
+			  		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    		<span class="glyphicon  btn-prev glyphicon-chevron-right" aria-hidden="true"></span>
+			    		<span class="sr-only">Next</span> 
+			  		</a>
+				</div>
+			</div>
+		</div>
+		<div class="our-skills" id="skills">
+			<div class="container">
+				<div class="title">
+					<h1 >Our Amazing Skills</h1>
+				</div>
+				<strong class="subtitle">Here is what we love and do best</strong>
+				<div class="knob-section">	
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="knob-holder">
+								<input class="knob" data-width="205" data-height="205" data-bgColor="#cb542f" data-fgcolor="rgba(0,0,0,.26)" data-thickness=".15" data-rotation="anticlockwise" value="72" data-displayInput=false>
+									<span>Web Design</span>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="knob-holder">
+								<input class="knob" data-width="205" data-height="205" data-bgColor="#cb542f" data-fgcolor="rgba(0,0,0,.26)" data-thickness=".15" data-rotation="anticlockwise" value="72" data-displayInput=false>
+								<span>Print Design</span>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="knob-holder">
+								<input class="knob" data-width="205" data-height="205" data-bgColor="#cb542f" data-fgcolor="rgba(0,0,0,.26)" data-thickness=".15" data-rotation="anticlockwise" value="72" data-displayInput=false>
+								<span>Branding</span>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="knob-holder">
+								<input class="knob" data-width="205" data-height="205" data-bgColor="#cb542f" data-fgcolor="rgba(0,0,0,.26)" data-thickness=".15" data-rotation="anticlockwise" value="72" data-displayInput=false>
+								<span>Motion</span>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<section class="quotes">
+					<div class="paragraph">	
+						<h2>Testimonials</h2>
+					</div>	
+					<div class="row">	
+						<div class="col-xs-12 col-md-6">
+							<blockquote>	
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. consequat ipsum nec orci scelerisque 
+								</p>
+								<cite>Joe Doe, Company CEO</cite>
+							</blockquote>
+						</div>		
+						<div class="col-xs-12 col-md-6">
+							<blockquote>	
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. consequat ipsum nec orci scelerisque 
+								</p>
+								<cite>Joe Doe, Company CEO</cite>
+							</blockquote>
+						</div>
+					</div>	
+				</section>
+			</div>
+		</div>	
+		<div class="staff" id="staff">
+			<div class="container">
+				<div class="title">
+					<h1>Our Awesome Staff</h1>
+				</div>
+				<strong class="subtitle">Meet Our Peeps</strong>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="staff-holder">
+							<img src="images/img-01.jpg" alt="staff"  class="staff-styling"  height="215" width="215">
+							<div class="text-holder-staff">
+								<div class="name-staff">
+									<h2>Amazing Sara</h2>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit. </p>
+								<p>Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+								<div class="contact-icons">	
+									<span class="icon-twitter icon-styling"></span>
+									<span class="icon-facebook icon-styling "></span>
+									<span class="icon-google icon-styling" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="staff-holder">
+							<img src="images/img-02.jpg" alt="staff" class="staff-styling"  height="215" width="215">
+							<div class="text-holder-staff">
+								<div class="name-staff">
+									<h2>Mike the Coder</h2>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit. </p>
+								<p>Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+								<div class="contact-icons">	
+									<span class="icon-twitter icon-styling"></span>
+									<span class="icon-facebook icon-styling "></span>
+									<span class="icon-google icon-styling" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="staff-holder">
+							<img src="images/img-03.jpg" alt="staff" class="staff-styling"  height="215" width="215">
+							<div class="text-holder-staff">
+								<div class="name-staff">
+									<h2>Creative Amy</h2>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit. </p>
+								<p>Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+								<div class="contact-icons">	
+									<span class="icon-twitter icon-styling"></span>
+									<span class="icon-facebook icon-styling "></span>
+									<span class="icon-google icon-styling" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="staff-holder">
+							<img src="images/img-04.jpg" alt="staff" class="staff-styling"  height="215" width="215">
+							<div class="text-holder-staff">
+								<div class="name-staff">
+									<h2>Jim the Designer</h2>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit. </p>
+								<p>Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.</p>
+								<div class="contact-icons">	
+									<span class="icon-twitter icon-styling"></span>
+									<span class="icon-facebook icon-styling "></span>
+									<span class="icon-google icon-styling" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="our-works" id="works">
+			<div class="container">
+				<h1>Our best works</h1>
+				<strong class="subtitle">More than 10 years expirience and something else</strong>
+				<ul class="breadcrumb breadcrumb-styling">
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#" class="active">Graphic Design</a></li>
+					<li><a href="#">Print</a></li>
+					<li><a href="#">Branding</a></li>
+					<li><a href="#">Motion Design</a></li>
+				</ul>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-05.jpg" alt="portfolio"  class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-06.jpg" alt="portfolio"  class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-07.jpg" alt="portfolio"  class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-08.jpg" alt="portfolio"  class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-9.jpg"  alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-10.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-11.jpg" alt="portfolio"  class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-12.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-13.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-14.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-15.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-16.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-17.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">
+							<img src="images/img-18.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">	
+							<img src="images/img-19.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>	
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="img-works">	
+							<img src="images/img-20.jpg" alt="portfolio" class="staff-styling" height="225" width="225">
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="blog" id="blog">
+			<div class="container">	
+				<div class="title">
+					<h1>Blog</h1>
+				</div>
+				<strong class="subtitle">Stay updated on what we do</strong>
+				<div class="row">
+					<div class="col-xs-12 col-md-9">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<img src="images/img-21.jpg" alt="blog" class="staff-styling media-object" height="214" width="214">
+							</a>
+							<div class="media-body">
+								<div class="paragraph">	
+									<h2>Latest post from the blog</h2>
+								</div>	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat. <a>Read more >></a>
+								</p>
+							</div>
+						</div>
+						<div class="media">
+							<a class="pull-left" href="#">
+								<img src="images/img-22.jpg" alt="blog" class="staff-styling media-object" height="214" width="214">
+							</a>
+							<div class="media-body">
+								<div class="paragraph">	
+									<h2>Another post</h2>
+								</div>	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat. <a>Read more >></a>
+								</p>
+							</div>
+						</div>
+						<div class="media">
+							<a class="pull-left" href="#">
+								<img src="images/img-23.jpg" alt="blog" class="staff-styling media-object" height="214" width="214">
+							</a>
+							<div class="media-body">
+								<div class="paragraph">	
+									<h2>Another post</h2>
+								</div>	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac dapibus dui. Phasellus a sapien eget diam convallis blandit.  Pellentesque quam metus, sagittis quis bibendum aliquam, imperdiet in erat. <a>Read more >></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">	
+						<aside class="sidebar">
+							<div class="paragraph">
+								<h2>Search</h2>
+							</div>
+							<div class="form-group search-holder ">
+								<input type="text" class="form-control search-bar" placeholder="Type here...">
+							</div>
+							<div class="paragraph">
+								<h2>Categories</h2>
+							</div>
+							<div class="news">	
+								<ul>
+									<li><a href="">Our News</a></li>
+									<li><a href="">Related projects</a></li>
+									<li><a href="">Happy Holidays</a></li>
+									<li><a href="">Freebie</a></li>
+									<li><a href="">In the News</a></li>
+									<li><a href="">Some Category</a></li>
+								</ul>
+							</div>	
+							<div class="paragraph">
+								<h2>Latest tweets</h2>
+							</div>	
+							<div class="textholder">
+							<p>
+								Lorem ipsum dolor sit amet,consectetur adipiscing elit. In acdapibus dui. <a href="">http://t.co/3qxiAwcf</a> via <a href="">@someuser</a>
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet,consectetur adipiscing elit. In acdapibus dui. <a href="">http://t.co/3qxiAwcf</a> via <a href="">@someuser</a>
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet,consectetur adipiscing elit. In acdapibus dui. <a href="">http://t.co/3qxiAwcf</a> via <a href="">@someuser</a>
+							</p>
+							</div>
+						</aside>
+					</div>	
+				</div>	
+			</div>
+		</div>
+		<div class="shortcodes" id="shortcodes">
+			<div class="container">	
+				<div class="title">
+					<h1>Shortcodes</h1>
+				</div>
+				<strong class="subtitle"> We've included commonly used web elements. Enjoy!</strong>
+				<div class="paragraph">
+					<h2>Columns</h2>
+				</div>
+				<div class="columns">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In consequat ipsum nec orci scelerisque id suscipit eros rhoncus. Mauris commodo tincidunt nunc tempor varius. Cras tincidunt odio ac tellus molestie sit amet sodales nunc suscipit. Aliquam turpis nisi, consequat quis rutrum in, viverra ac turpis.
+									<br>						
+									Suspendisse volutpat viverra elit.  Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In 
+								</p>
+							</div>	
+						</div>
+						<div class="col-sm-6">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In consequat ipsum nec orci scelerisque id suscipit eros rhoncus. Mauris commodo tincidunt nunc tempor varius. Cras tincidunt odio ac tellus molestie sit amet sodales nunc suscipit. Aliquam turpis nisi, consequat quis rutrum in, viverra ac turpis.
+									<br>						
+									Suspendisse volutpat viverra elit.  Nam aliquet elit ut erat commodo egestas. Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. In 
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-holder-shortcodes">	
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="paragraph">
+					<h2>Text Elements</h2>
+				</div>
+				<div class="text-elements">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="element-ul">
+								<ul >
+									<li>lorem ipsum dolor sit amet</li>
+									<li>consectetur adipiscing elit, curabitur</li>
+									<li>nisl bibendum facilisis in eu dolor</li>
+									<li>ut erat commodo egestas vestibulum</li>
+									<li>luctus eget scelerisque quis, imperdiet</li>
+									<li>consequat ipsum nec orci scelerisque</li>
+									<li>auris commodo tincidunt nunc tempor varius</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="element-ul">
+								<ol >
+									<li>lorem ipsum dolor sit amet</li>
+									<li>consectetur adipiscing elit, curabitur</li>
+									<li>nisl bibendum facilisis in eu dolor</li>
+									<li>ut erat commodo egestas vestibulum</li>
+									<li>luctus eget scelerisque quis, imperdiet</li>
+									<li>consequat ipsum nec orci scelerisque</li>
+									<li>auris commodo tincidunt nunc tempor varius</li>
+								</ol>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisor.</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="sliding-boxes">	
+					<div class="paragraph">
+						<h2>Sliding boxes and Tab blocks</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title styling">
+											<a class="tabs-icons collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  						First accordion item
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="tabs-icons collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  							Second accordion item 
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="heading3">
+										<h4 class="panel-title">
+											<a class="tabs-icons collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+					  						Third accordion item
+											</a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading3">
+										<div class="panel-body">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="heading4">
+										<h4 class="panel-title">
+											<a class="tabs-icons collapsed actives" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+					  						Fourth accordion item
+											</a>
+										</h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse  " role="tabpanel" aria-labelledby="heading4">
+										<div class="panel-body">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="tabs">
+								<ul class="nav tabs-custom" role="tablist">
+									<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab1</a></li>
+									<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab2</a></li>
+									<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Another tab</a></li>
+								</ul>
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="tab1">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+										</p>
+										<p>
+											Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+										</p>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab2">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, commodi perspiciatis, culpa ipsum distinctio ad possimus consectetur pariatur. Nam dolore laboriosam nulla possimus necessitatibus quibusdam, voluptatem ullam? Placeat enim, ea.
+										</p>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab3">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iste quaerat, qui illo, dicta quasi aliquam officia molestiae quam nemo recusandae obcaecati exercitationem harum unde.
+										</p>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>	
+				<div class="info-boxes">	
+					<div class="paragraph">
+						<h2>Info boxes and buttons</h2>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">	
+							<div class="info-holder">
+								<h3>Heading goes here</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-6">	
+							<div class="info-holder">
+								<h3>Heading goes here</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="btn-holder">
+						<button type="button" class="btn  btn-xs">Button</button>
+						<button type="button" class="btn  btn-sm">Large button</button>
+						<button type="button" class="btn  btn-lg">Extra large button</button>
+					</div>
+				</div>	
+				<div class="boxes-holder">	
+					<div class="paragraph">
+						<h2>Boxes</h2>
+					</div>
+					<div class="row">	
+						<div class="col-xs-12 col-md-6">
+							<div class="info-holder">
+								<p class="ok">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>	
+						<div class="col-xs-12 col-md-6">
+							<div class="info-holder">
+								<p class="remove">
+									
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="info-holder">
+								<p class="sign">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="info-holder">
+								<p class="star">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+								</p>
+							</div>
+						</div>
+					</div>		
+				</div>	
+			</div>	
+		</div>
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="title">
+					<h1>Contact Us</h1>
+				</div>
+				<strong class="subtitle">We are aways open to your questions and comments</strong>
+				<div class="row">
+					<div class="col-xs-12 col-md-7">	
+						<div class="map-holder">
+							<div id="map"></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-5">
+						<div class="form-container">
+							<div class="paragraph">
+								<h2>Drop us a line</h2>
+							</div>	
+							<div class="form-holder">
+								<div class="form-group">
+									<input type="text" class="form-control" id="Name" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="Email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<textarea  rows="10" class="form-control" ></textarea>
+								</div>
+								<div class="btn-holder">
+									<input type="submit" class="btn  btn-custom btn-info" value="Submit">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="contact-info">	
+							<div class="paragraph">
+								<h2>Contact Info</h2>
+							</div>	
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							</p>
+							<p>
+								Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel purus vel nisl bibendum facilisis in eu dolor. Nam aliquet elit ut erat commodo egestas.
+							</p>
+							<p>
+								Vestibulum odio sapien, luctus eget scelerisque quis, imperdiet sit amet urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-md-5">
+						<div class="social-network">	
+							<div class="paragraph">
+								<h2>Social Networks</h2>
+							</div>
+							<ul class="social-links">
+								<li><a href=""><span class="icon-twitter icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-facebook icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-google icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-flickr icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-dribbble icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-linkedin2 icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-pinterest icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-skype icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-behance icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-yahoo icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-amazon icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-vimeo icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-tumblr icon-styling"></span></a></li>
+								<li><a href=""><span class="icon-github icon-styling"></span></a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>	
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="title">
+				<nav class="nav">
+					<ul>
+						<li><a href="#home" class="smooth-scroll">Home</a></li>
+						<li><a href="#home" class="smooth-scroll" >About</a></li>
+						<li><a href="#staff" class="smooth-scroll">Team</a></li>
+						<li><a href="#works" class="smooth-scroll">Portfolio</a></li>
+						<li><a href="#blog" class="smooth-scroll">Blog</a></li>
+						<li><a href="#shortcodes" class="smooth-scroll">Shortcodes</a></li>
+						<li><a href="#contact" class="smooth-scroll">Contact</a></li>
+					</ul>
+				</nav>
+				</div>
+				<img src="images/logo-footer.png" height="33" width="131" alt="">
+			</div>
+		</footer>
+	</div>	
+
+	<script >
+		$('.smooth-scroll').click(function(){
+    		$('html, body').animate({
+        		scrollTop: $( $(this).attr('href') ).offset().top}, 500);
+    	return false;
+		});
+	</script>
+	<script>
+	    $(function() {
+	        $(".knob").knob({
+	        	
+	        });
+	    });
+	</script>
+  
+</body>
+</html>
