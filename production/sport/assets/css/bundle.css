@@ -2765,10 +2765,12 @@ a {
   }
 
   .form_input_a {
-    max-width: 290px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .form_input_b {
-    max-width: 290px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
