@@ -345,6 +345,7 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -605,6 +606,7 @@ a {
   height: 100%;
   background-color: #14e8ab;
   opacity: 0;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

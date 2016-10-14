@@ -176,7 +176,6 @@ Modals.prototype.helper = function() {
 
 Modals.prototype.show = function() {
     var close = document.querySelectorAll('.modal-close');
-   	this.top = window.pageYOffset;
     if ($('#dark')){
         $('#dark').remove();
     }
@@ -202,7 +201,6 @@ Modals.prototype.closeF = function() {
 	}
     $('#dark').remove();
     this.modal.style.display = 'none';
-    document.body.scrollTop = this.top;
 };
 
 new Modals(document.querySelectorAll('.modal-order'), document.querySelector('.modals__order'));
