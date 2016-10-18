@@ -211,6 +211,10 @@ a {
   z-index: 1;
 }
 
+.logo {
+  left: 0px;
+}
+
 .name__item {
   width: 59%;
   height: auto;
