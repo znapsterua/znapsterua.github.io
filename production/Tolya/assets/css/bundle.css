@@ -211,10 +211,6 @@ a {
   z-index: 1;
 }
 
-.logo {
-  left: 0px;
-}
-
 .name__item {
   width: 59%;
   height: auto;
@@ -851,6 +847,10 @@ a {
 }
 
 @media (max-width: 720px) {
+  .cover {
+    left: 10px;
+  }
+
   .title__write {
     font-size: 76px;
     letter-spacing: 3px;
