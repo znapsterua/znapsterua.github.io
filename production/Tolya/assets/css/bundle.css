@@ -882,7 +882,7 @@ a {
 .move__words {
   margin-right: 20px;
   font-family: ProximaNova-Light, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   color: #fff;
   text-transform: uppercase;
@@ -919,7 +919,7 @@ a {
   padding-left: 70px;
   margin-bottom: 30px;
   font-family: ProximaNova-Light, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 2px;
   color: #fff;
 }
@@ -930,7 +930,7 @@ a {
   content: '';
   width: 70px;
   height: 79px;
-  top: -27px;
+  top: -31px;
   left: -18px;
   background: url("../img/compressed/design.png") no-repeat center center;
   background-size: cover;
@@ -945,7 +945,7 @@ a {
   content: '';
   width: 74px;
   height: 68px;
-  top: -20px;
+  top: -24px;
   left: -20px;
   background: url("../img/compressed/code.png") no-repeat center center;
   background-size: cover;
@@ -960,7 +960,7 @@ a {
   content: '';
   width: 71px;
   height: 74px;
-  top: -23px;
+  top: -27px;
   left: -18px;
   background: url("../img/compressed/e-mark.png") no-repeat center center;
   background-size: cover;
@@ -975,7 +975,7 @@ a {
   content: '';
   width: 46px;
   height: 72px;
-  top: -23px;
+  top: -26px;
   left: -10px;
   background: url("../img/compressed/mobile.png") no-repeat center center;
   background-size: cover;
@@ -986,7 +986,7 @@ a {
 
 .types__about {
   font-family: ProximaNova-Light, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   line-height: 1.8;
   color: #fff;
@@ -1399,6 +1399,10 @@ a {
     font-size: 16px;
     letter-spacing: 1px;
   }
+
+  .type__head {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1511,6 +1515,74 @@ a {
   .family__person {
     width: 310px;
   }
+
+  .bg-main {
+    height: 500px;
+  }
+
+  .title__animation {
+    display: none;
+  }
+
+  .title__agency {
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+
+  .about__somewords {
+    font-size: 18px;
+  }
+
+  .bg-gr {
+    padding-bottom: 70px;
+  }
+
+  .who__top {
+    margin-top: -150px;
+    margin-bottom: 70px;
+    min-height: 375px;
+  }
+
+  .block__count {
+    font-size: 50px;
+  }
+
+  .block__routine {
+    font-size: 14px;
+  }
+
+  .fields__types {
+    width: 45%;
+  }
+
+  .types__tech {
+    padding-left: 60px;
+    font-size: 22px;
+  }
+
+  .types__about {
+    font-size: 14px;
+  }
+
+  .move__words {
+    font-size: 12px;
+  }
+
+  .content__pages {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+  }
+
+  .pages__type {
+    margin-bottom: 60px;
+    width: 50%;
+  }
+
+  .portfolio__works {
+    margin-top: 450px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1583,6 +1655,169 @@ a {
 
   .person__position {
     font-size: 12px;
+  }
+
+  .title__agency {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .title__scroll {
+    padding: 10px 9px;
+    font-size: 10px;
+  }
+
+  .who__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: none;
+    margin-bottom: 60px;
+  }
+
+  .about__us {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .about__somewords {
+    font-size: 16px;
+  }
+
+  .top__about {
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+
+  .top__img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .who__numbers {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .bg-gr {
+    padding-bottom: 0px;
+  }
+
+  .numbers__block {
+    margin-bottom: 60px;
+    width: 50%;
+  }
+
+  .fields {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .bg-black {
+    padding-top: 115px;
+  }
+
+  .fields__types {
+    width: 70%;
+  }
+
+  .types__tech {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .types__tech:before {
+    display: none;
+  }
+
+  .types__about {
+    text-align: center;
+  }
+
+  .bg-back {
+    display: none;
+  }
+
+  .price__title {
+    display: none;
+  }
+
+  .priceBg {
+    background: none;
+    background-color: #f6f6f6;
+  }
+
+  .type__head {
+    font-size: 18px;
+  }
+
+  .type__price {
+    margin-bottom: 35px;
+    font-size: 32px;
+  }
+
+  .type__order {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .touch__dscr {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .dscr__get {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .dscr__get_btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .get__btn_item {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .portfolio__works {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 380px;
+    height: 900px;
+  }
+
+  .works__left {
+    width: 100%;
+    height: 66.66%;
+  }
+
+  .left__top {
+    height: 50%;
+  }
+
+  .left__bottom {
+    height: 50%;
+  }
+
+  .works__right {
+    width: 100%;
+    height: 33.33%;
+  }
+
+  .watch__btn {
+    padding: 10px 25px;
   }
 }
 
@@ -1692,5 +1927,76 @@ a {
 
   .family__person {
     width: 230px;
+  }
+
+  .title__agency {
+    font-size: 18px;
+  }
+
+  .title__scroll {
+    padding: 8px 6px;
+  }
+
+  .about__us {
+    font-size: 22px;
+  }
+
+  .about__somewords {
+    font-size: 14px;
+  }
+
+  .top__img {
+    height: 300px;
+  }
+
+  .block__count {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+
+  .block__routine {
+    font-size: 10px;
+  }
+
+  .move {
+    display: none;
+  }
+
+  .bg-black {
+    padding-top: 50px;
+  }
+
+  .fields__types {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .fields__line {
+    margin-bottom: 50px;
+  }
+
+  .pages__type {
+    width: 100%;
+  }
+
+  .portfolio__works {
+    height: 800px;
+  }
+
+  .priceBg {
+    height: auto;
+  }
+
+  .price__inside {
+    position: relative;
+  }
+
+  .portfolio__works {
+    margin-top: 20px;
+  }
+
+  .watch__btn {
+    padding: 8px 20px;
+    font-size: 12px;
   }
 }
