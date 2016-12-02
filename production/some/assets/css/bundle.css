@@ -781,8 +781,9 @@ a {
 
 .block__dscr {
   position: relative;
-  margin-bottom: 90px;
-  width: 280px;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  width: 310px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
@@ -795,7 +796,7 @@ a {
   position: absolute;
   content: '';
   display: block;
-  top: 80px;
+  bottom: 0px;
   width: 20px;
   height: 2px;
   background: #000;
@@ -912,20 +913,20 @@ a {
   align-items: center;
   width: 800px;
   height: 65vh;
+  min-height: 530px;
   right: 0px;
   top: 0px;
   background: #fff;
 }
 
 .sub__box {
-  width: 70%;
-  height: 80%;
+  width: 68%;
 }
 
 .box__title {
   margin-bottom: 45px;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 56px;
+  font-size: 54px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 3.6px;
@@ -980,6 +981,15 @@ a {
   background-color: #2e2e2e;
   cursor: pointer;
   outline: none;
+}
+
+.active-text {
+  color: #000;
+}
+
+.active-item {
+  background: #000;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1400px) {

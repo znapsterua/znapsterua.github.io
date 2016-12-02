@@ -90,20 +90,20 @@ window.attachEvent("onmousewheel", onWheel);
 
 function onWheel(event){ 
 var e = event;
-if(e.deltaY > 0 && i === 0){
+if(e.deltaY < 0 && i === 0){
     wheel = 0;
-} else if(e.deltaY < 0 && i === 8){
+} else if(e.deltaY > 0 && i === 8){
     wheel = 0;
 }else {
     wheel += e.deltaY;
 }
     console.log(wheel);
-if(wheel >= 400 && i != 0){ 
-i--; 
+if(wheel >= 600 && i != 8){ 
+i++; 
 console.log(wheel); 
 Ajax(i); 
-}else if(i != 8 && wheel <= -400){ 
-i++; 
+}else if(i != 0 && wheel <= -600){ 
+i--; 
 Ajax(i); 
 } 
 } 
@@ -112,7 +112,6 @@ var rotate = parseInt(-45);
 function Ajax(i){ 
 var i = i; 
 wheel = 0;
-
 console.log(i);
 if (i == 0 || i == 8) {
    $('#display').fadeOut();
