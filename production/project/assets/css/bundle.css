@@ -361,10 +361,6 @@ a {
   transform: rotate(-90deg);
 }
 
-.content__contact {
-  white-space: nowrap;
-}
-
 .content__social {
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +383,7 @@ a {
   font-weight: bold;
   letter-spacing: 0.9px;
   color: #f95656;
+  white-space: nowrap;
 }
 
 .content__contact:before {
@@ -397,7 +394,8 @@ a {
   left: 0px;
   width: 20px;
   height: 20px;
-  background: #f95656;
+  background: url("../img/compressed/elem.png") no-repeat center center;
+  background-size: cover;
 }
 
 .social__text {

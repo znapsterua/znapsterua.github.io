@@ -70,7 +70,8 @@ function Modal(show, hide, modal) {
 
 
 
-var i = 0, 
+var i = 0,
+wheel = 0; 
 rotate = 0; 
 if (window.addEventListener) { 
 if ('onwheel' in document) { 
@@ -88,12 +89,20 @@ window.attachEvent("onmousewheel", onWheel);
 } 
 
 function onWheel(event){ 
-var e = event; 
-if(e.deltaY < 0 && i != 0){ 
+var e = event;
+if(e.deltaY > 0 && i === 0){
+    wheel = 0;
+} else if(e.deltaY < 0 && i === 8){
+    wheel = 0;
+}else {
+    wheel += e.deltaY;
+}
+    console.log(wheel);
+if(wheel >= 400 && i != 0){ 
 i--; 
-console.log(e.deltaY); 
+console.log(wheel); 
 Ajax(i); 
-}else if(i != 8 && e.deltaY > 0){ 
+}else if(i != 8 && wheel <= -400){ 
 i++; 
 Ajax(i); 
 } 
@@ -102,6 +111,7 @@ var rotate = parseInt(-45);
 
 function Ajax(i){ 
 var i = i; 
+wheel = 0;
 console.log(i);
 if (i == 0 || i == 8) {
    $('#display').fadeOut();
