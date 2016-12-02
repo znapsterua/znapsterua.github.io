@@ -112,6 +112,7 @@ var rotate = parseInt(-45);
 function Ajax(i){ 
 var i = i; 
 wheel = 0;
+
 console.log(i);
 if (i == 0 || i == 8) {
    $('#display').fadeOut();
