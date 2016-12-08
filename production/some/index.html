@@ -16,10 +16,21 @@
 					</div>
 					<div class="head__nav">
 						<ul class="nav__list">
-							<li class="list__item"><a href="#" class="item__page">Наши услуги</a></li>
+							<li class="list__item">
+								<a href="#" class="item__page">Наши услуги</a>
+								<ul class="item__dropdown">
+									<li class="dropdown__link" onclick='Ajax(1)'>Концепция</li>
+									<li class="dropdown__link" onclick='Ajax(2)'>Меню</li>
+									<li class="dropdown__link" onclick='Ajax(3)'>Брендинг</li>
+									<li class="dropdown__link" onclick='Ajax(4)'>Проектирование</li>
+									<li class="dropdown__link" onclick='Ajax(5)'>Реклама</li>
+									<li class="dropdown__link" onclick='Ajax(6)'>Управление</li>
+									<li class="dropdown__link" onclick='Ajax(7)'>Startup</li>
+								</ul>
+							</li>
 							<li class="list__item"><a href="#" class="item__page">О Нас</a></li>
 							<li class="list__item"><a href="#" class="item__page">Блог</a></li>
-							<li class="list__item"><a href="#" class="item__page">Контакты</a></li>
+							<li class="list__item"><a href="#" class="item__page" onclick="Ajax(8)">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -72,25 +83,25 @@
 				<div class="main__sidebar">
 					<div class="sidebar__nav">
 						<ul class="nav__pages">
-							<li class="pages__link active-text">Концепция</li>
-							<li class="pages__link">Меню</li>
-							<li class="pages__link">Брендинг</li>
-							<li class="pages__link">Проектирование</li>
-							<li class="pages__link">Реклама</li>
-							<li class="pages__link">Управление</li>
-							<li class="pages__link">Startup</li>
+							<li class="pages__link active-text"><a class="link__menu" onclick='Ajax(1)'>Концепция</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(2)'>Меню</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(3)'>Брендинг</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(4)'>Проектирование</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(5)'>Реклама</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(6)'>Управление</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='Ajax(7)'>Startup</a></li>
 						</ul>
 					</div>
 					<div class="sidebar__pagination">
 						<div class="pagination__items">
 							<ul class="items__lines">
-								<li class="lines__item active-item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
+								<li class="lines__item active-item" onclick='Ajax(1)'></li>
+								<li class="lines__item" onclick='Ajax(2)'></li>
+								<li class="lines__item" onclick='Ajax(3)'></li>
+								<li class="lines__item" onclick='Ajax(4)'></li>
+								<li class="lines__item" onclick='Ajax(5)'></li>
+								<li class="lines__item" onclick='Ajax(6)'></li>
+								<li class="lines__item" onclick='Ajax(7)'></li>
 							</ul>
 						</div>
 						<div class="pagination__help">

@@ -161,6 +161,7 @@ a {
 }
 
 .content__head {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -173,7 +174,9 @@ a {
 }
 
 .head__nav {
+  height: 100%;
   margin-left: 130px;
+  z-index: 10;
 }
 
 .item__page {
@@ -192,10 +195,53 @@ a {
 .nav__list {
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .list__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 48px;
+}
+
+.list__item:first-child {
+  cursor: pointer;
+}
+
+.list__item:hover .item__dropdown {
+  opacity: 1;
+}
+
+.item__dropdown {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: calc(100vw - 400px);
+  height: 18vh;
+  bottom: -18vh;
+  left: 0px;
+  background: #353535;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.item__dropdown:hover {
+  opacity: 1;
+}
+
+.dropdown__link {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  color: #fff;
 }
 
 .content__show {
@@ -460,6 +506,11 @@ a {
   margin-bottom: 0px;
 }
 
+.link__menu {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .sidebar__pagination {
   display: -ms-flexbox;
   display: flex;
@@ -481,6 +532,7 @@ a {
   height: 14.8px;
   opacity: 0.2;
   background-color: #000;
+  cursor: pointer;
 }
 
 .lines__item:last-child {
