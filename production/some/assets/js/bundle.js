@@ -150,7 +150,7 @@ beforeSend: function(){
 rotate += 360; 
 $('#line').css('transform', 'rotate('+ rotate +'deg)'); 
 $('#line').css('background', 'rgb('+ getRandomInt(0, 255) + ',' + getRandomInt(0, 255) + ',' + getRandomInt(0, 255) +')'); 
-setTimeout(Go, 500);
+setTimeout(Go, 1000);
 
 }, 
 success: function(html) { 
