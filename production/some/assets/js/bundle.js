@@ -104,11 +104,11 @@ if(e){
         wheel += e.originalEvent.wheelDelta;
     }
         console.log(wheel);
-    if(wheel <= -120 && i != 8){ 
+    if(wheel <= -0 && i != 8){ 
     i++; 
     
     Ajax(i); 
-    }else if(i != 0 && wheel >= 120){ 
+    }else if(i != 0 && wheel >= 0){ 
     i--; 
     Ajax(i); 
     }  
