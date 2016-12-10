@@ -171,6 +171,7 @@ a {
 
 .head__logo {
   margin-left: 6%;
+  z-index: 10;
 }
 
 .head__nav {
@@ -206,18 +207,9 @@ a {
   margin-right: 48px;
 }
 
-.list__item:first-child {
-  cursor: pointer;
-}
-
-.list__item:hover .item__dropdown {
-  opacity: 1;
-}
-
 .item__dropdown {
   position: absolute;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
@@ -228,12 +220,6 @@ a {
   left: 0px;
   background: #353535;
   overflow: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-
-.item__dropdown:hover {
-  opacity: 1;
 }
 
 .dropdown__link {
@@ -242,6 +228,7 @@ a {
   font-weight: bold;
   letter-spacing: 1.1px;
   color: #fff;
+  cursor: pointer;
 }
 
 .content__show {
@@ -569,8 +556,7 @@ a {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
-  min-height: 950px;
+  min-height: 100%;
   background: #1a1a1a;
   z-index: 10;
 }
@@ -600,10 +586,9 @@ a {
 .modal__content {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   margin: 0 auto;
   margin-top: 114px;
+  margin-bottom: 130px;
   max-width: 1400px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -612,12 +597,23 @@ a {
 .content__img {
   position: relative;
   margin-bottom: 40px;
+  margin-left: 30px;
   width: 30%;
   height: 255px;
   opacity: 0;
   transform: scale(0.7, 0.7);
   background: #f386a7;
   transition: all 0.5s ease-out;
+}
+
+.content__img:nth-child(1 + 3n) {
+  margin-left: 0px;
+}
+
+.content__img:nth-child(n + 7) {
+  display: none;
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .img__plus {
@@ -696,6 +692,7 @@ a {
 }
 
 .more__text {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -703,6 +700,24 @@ a {
   margin-right: 53px;
   opacity: 0;
   transition: all 0.5s ease-out;
+}
+
+#hideP {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#showP {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .text__project {
@@ -905,15 +920,17 @@ a {
   font-weight: bold;
 }
 
-.line {
+#display {
   position: absolute;
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: end;
   justify-content: flex-end;
   top: 50%;
   width: calc(50% + 60px);
   min-width: calc(750px + 60px);
   z-index: 4;
+  opacity: 0;
 }
 
 .line__item {
@@ -924,7 +941,6 @@ a {
   width: 120px;
   height: 6px;
   background: #ff6a6a;
-  transform: rotate(-45deg);
   transition: ease-out 1s;
 }
 
