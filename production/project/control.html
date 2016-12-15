@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+</head>
+<body>
+	<div class="wrapper-page">
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a href="#" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link">Концепция</li>
+									<li class="dropdown__link">Меню</li>
+									<li class="dropdown__link">Брендинг</li>
+									<li class="dropdown__link">Проектирование</li>
+									<li class="dropdown__link">Реклама</li>
+									<li class="dropdown__link">Управление</li>
+									<li class="dropdown__link">Startup</li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="#" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="#" class="item__page">Блог</a></li>
+							<li class="list__item"><a href="#" class="item__page">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться на главную</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact">Связаться с нами</p>
+					<div class="content__social">
+						<a href="#" class="social__text">Facebook</a>
+						<a href="#" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/c1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+				</div>
+				<div class="main__sidebar">
+					<div class="sidebar__nav">
+						<ul class="nav__pages">
+							<li class="pages__link"><a class="link__menu">Концепция</a></li>
+							<li class="pages__link"><a class="link__menu">Меню</a></li>
+							<li class="pages__link"><a class="link__menu">Брендинг</a></li>
+							<li class="pages__link"><a class="link__menu">Проектирование</a></li>
+							<li class="pages__link"><a class="link__menu">Реклама</a></li>
+							<li class="pages__link active-text"><a class="link__menu">Управление</a></li>
+							<li class="pages__link"><a class="link__menu">Startup</a></li>
+						</ul>
+					</div>
+					<div class="sidebar__pagination">
+						<div class="pagination__items">
+							<ul class="items__lines">
+								<li class="lines__item active-item" onclick='Slide(0)'></li>
+								<li class="lines__item" onclick='Slide(1)'></li>
+								<li class="lines__item" onclick='Slide(2)'></li>
+								<li class="lines__item" onclick='Slide(3)'></li>
+								<li class="lines__item" onclick='Slide(4)'></li>
+							</ul>
+						</div>
+						<div class="pagination__help">
+							<span class="help__word">Вниз</span>
+						</div>
+					</div>
+					<div class="main__page_name">
+						<h2 class="page__canape">Управление</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap-brand">
+		<div class="brand__about">
+			<div class="about__dscr">
+				<div class="cover_dscr more-space">
+					<h2 class="dscr__title_page">Управление</h2>
+					<p class="dscr__title_dscr">
+						Для того что бы ресторан работал - в нем нужно жить!
+						После проведения некоторого анализа, мы готовы взять ресторан в управление если поверим в него.
+					</p>
+					<h4 class="dscr__same_head">Услуга управляющая компания</h4>
+					<p class="dscr__same_words">
+
+						<span class="space-bottom">Мы открываем новые заведения и доводим до ума существующие. Осуществляем дальнейшее управление рестораном. Опыт, интеллектуальные ресурсы и команда, которая обеспечит Вам регулярный доход, сделает ваш бизнес ресторанным действительно с большой буквы.</span>
+
+						Сегодня, важную роль в грамотном ресторанном менеджменте играют современные технологии, позволяющие оснастить заведение полным комплексом программно-аппаратного обеспечения. Подобная автоматизация ресторанного бизнеса даст возможность Вам, как владельцу, получать полную картину и статистику заведения.
+					</p>
+				</div>
+			</div>
+			<div class="about__img">
+				<span class="img__line color_b"></span>
+				<img class="img__same_blog" src="assets/img/compressed/c2.jpg">
+			</div>
+		</div>
+		<div class="control__content">
+			<div class="content__flex_rev">
+				<div class="flex__img_ctrl">
+					<img class="img__size" src="assets/img/compressed/c3.jpg">
+				</div>
+				<div class="flex__text_ctrl">
+					<p class="text__coolman">
+						<span class="coolman_space">Во главе победоносного войска должен стоять настоящий Юлий Цезарь! Человек, который умеет мгновенно реагировать, принимать взвешенные решения, разумно рисковать, опираться на хорошо подготовленных солдат и обладает необходимыми знаниями.</span>
+
+						У вас нет на примете таких? Не беда! Мы готовы оценить заведение и принять его в управление!
+					</p>
+				</div>
+			</div>
+			<div class="content__briff">
+				<div class="briff__box">
+					<p class="box__text">
+						Заполните бриф, и мы расскажем вам,
+						как мы можем помочь
+					</p>
+					<button class="box__btn">Связаться с нами</button>
+				</div>
+			</div>
+		</div>
+		<div class="brand__blog top-space">
+			<div class="another">
+				<h4 class="another__title">
+					Другие наши услуги
+				</h4>
+			</div>
+		</div>
+		<footer class="flex-nav">
+			<ul class="nav__footer">
+				<li class="footer__item"><a class="item__link_footer" href="#">Концепция</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Меню</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Брендинг</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Проектирование</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Реклама</a></li>
+				<li class="footer__item"><a class="item__link_footer after-foot" href="#">Управление</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Startup</a></li>
+			</ul>
+		</footer>
+	</div>
+
+	
+
+
+
+
+	<div class="modal">
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Рестранное агенство</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>
