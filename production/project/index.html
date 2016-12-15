@@ -12,14 +12,25 @@
 			<div class="content flex">
 				<div class="content__head">
 					<div class="head__logo">
-						<a href="#" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+						<a href="#" class="logo__link" onclick='AjaxE(0)'><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
 					</div>
 					<div class="head__nav">
 						<ul class="nav__list">
-							<li class="list__item"><a href="#" class="item__page">Наши услуги</a></li>
+							<li class="list__item" id="list">
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link" onclick='AjaxE(1)'>Концепция</li>
+									<li class="dropdown__link" onclick='AjaxE(2)'>Меню</li>
+									<li class="dropdown__link" onclick='AjaxE(3)'>Брендинг</li>
+									<li class="dropdown__link" onclick='AjaxE(4)'>Проектирование</li>
+									<li class="dropdown__link" onclick='AjaxE(5)'>Реклама</li>
+									<li class="dropdown__link" onclick='AjaxE(6)'>Управление</li>
+									<li class="dropdown__link" onclick='AjaxE(7)'>Startup</li>
+								</ul>
+							</li>
 							<li class="list__item"><a href="#" class="item__page">О Нас</a></li>
 							<li class="list__item"><a href="#" class="item__page">Блог</a></li>
-							<li class="list__item"><a href="#" class="item__page">Контакты</a></li>
+							<li class="list__item"><a href="#" class="item__page" onclick="AjaxE(8)">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -68,33 +79,35 @@
 		</div>
 		<div id='wrap' class="wrap">
 			<div class="main">	
-				<div class="home_img"></div>
+				<div class="home_img">
+					<img class="home_background" src="assets/img/compressed/main.jpg">
+				</div>
 				<div class="main__sidebar">
 					<div class="sidebar__nav">
 						<ul class="nav__pages">
-							<li class="pages__link">Концепция</li>
-							<li class="pages__link">Меню</li>
-							<li class="pages__link">Брендинг</li>
-							<li class="pages__link">Проектирование</li>
-							<li class="pages__link">Реклама</li>
-							<li class="pages__link">Управление</li>
-							<li class="pages__link">Startup</li>
+							<li class="pages__link active-text"><a class="link__menu" onclick='AjaxE(1)'>Концепция</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(2)'>Меню</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(3)'>Брендинг</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(4)'>Проектирование</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(5)'>Реклама</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(6)'>Управление</a></li>
+							<li class="pages__link"><a class="link__menu" onclick='AjaxE(7)'>Startup</a></li>
 						</ul>
 					</div>
 					<div class="sidebar__pagination">
 						<div class="pagination__items">
 							<ul class="items__lines">
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
-								<li class="lines__item"></li>
+								<li class="lines__item active-item" onclick='AjaxE(1)'></li>
+								<li class="lines__item" onclick='AjaxE(2)'></li>
+								<li class="lines__item" onclick='AjaxE(3)'></li>
+								<li class="lines__item" onclick='AjaxE(4)'></li>
+								<li class="lines__item" onclick='AjaxE(5)'></li>
+								<li class="lines__item" onclick='AjaxE(6)'></li>
+								<li class="lines__item" onclick='AjaxE(7)'></li>
 							</ul>
 						</div>
 						<div class="pagination__help">
-							<span class="help__word">Вверх</span>
+							<span class="help__word">Вниз</span>
 						</div>
 					</div>
 				</div>
@@ -177,9 +190,33 @@
 					<p class="dscr__name">25 Coffee Roasters</p>
 				</div>
 			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
 		</div>
 		<div class="modal__more">
 			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
 				<p class="text__project">Больше проектов</p>
 				<div class="text__block">
 					<span class="block__plus_first"></span>
@@ -189,6 +226,6 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/concat.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
 </body>
 </html>
