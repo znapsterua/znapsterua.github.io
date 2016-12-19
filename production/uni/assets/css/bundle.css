@@ -174,5 +174,7 @@ header {
 @media (max-width: 460px) {
   section {
     border: none;
+    width: 100%;
+    height: 100%;
   }
 }
