@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".main").onepage_scroll({sectionContainer:"section",responsiveFallback:600,loop:!0})});
+$(document).ready(function(){$(".main").onepage_scroll({sectionContainer:"section",responsiveFallback:!1,loop:!0})});
