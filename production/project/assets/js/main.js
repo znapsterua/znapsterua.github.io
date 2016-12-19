@@ -4,7 +4,11 @@ var i = 0,
 wheel = 0, 
 rotate = 0,
 stop = true;
-Go();
+
+if (document.documentElement.clientWidth >= 1100) {
+    Go();
+}
+
 $('#display').css('opacity', '1');
 $('#display').fadeOut(0);
 
