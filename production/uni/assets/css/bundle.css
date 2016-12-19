@@ -166,3 +166,13 @@ section {
   height: calc(100% - 20px) !important;
   background-color: #808080;
 }
+
+header {
+  position: fixed;
+}
+
+@media (max-width: 460px) {
+  section {
+    border: none;
+  }
+}
