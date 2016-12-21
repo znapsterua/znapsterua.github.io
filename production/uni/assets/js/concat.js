@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".main").onepage_scroll({sectionContainer:"section",responsiveFallback:!1,loop:!0})});
+$(document).ready(function(){$(".main").onepage_scroll({sectionContainer:"section",responsiveFallback:!1,loop:!0})}),$("#down").click(function(){$(".main").moveDown()}),$(document).ready(function(){$(".certif__item").slick({dots:!0,arrows:!1})});
