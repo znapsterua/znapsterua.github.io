@@ -273,3 +273,53 @@ function Slide(i) {
     img.style.display = 'block';
     maspag[i].classList.add("active-item");
 }
+
+var maspagS = document.querySelectorAll(".list__line_proj"),
+    masimgS = document.querySelectorAll(".list__pic_proj");
+
+
+function SlideS(i) {
+    var img = masimgS[i];
+    for (var j = 0; j < masimgS.length; j++) {
+        masimgS[j].style.display = 'none';
+        maspagS[j].classList.remove("active-pic");
+    }
+    img.style.display = 'block';
+    maspagS[i].classList.add("active-pic");
+}
+
+var maspagT = document.querySelectorAll(".list__line_inter"),
+    masimgT = document.querySelectorAll(".inter__img");
+
+
+function SlideT(i) {
+    var img = masimgT[i];
+    for (var j = 0; j < masimgT.length; j++) {
+        masimgT[j].style.display = 'none';
+        maspagT[j].classList.remove("active-img");
+    }
+    img.style.display = 'block';
+    maspagT[i].classList.add("active-img");
+}
+
+$(document).ready(function(){
+  $('.slider__slick').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    centerMode: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+  });
+});
