@@ -373,7 +373,7 @@
 }
 
 .white-nav {
-  color white
+  color: white;
 }
 @media only screen and (max-width : 1456px) {
 	.member_line{
