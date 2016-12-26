@@ -371,6 +371,10 @@
 	margin-top: -30px;
 	z-index: -1;
 }
+
+.white-nav {
+  color white
+}
 @media only screen and (max-width : 1456px) {
 	.member_line{
 		width: 80px;
