@@ -302,6 +302,23 @@ function SlideT(i) {
     maspagT[i].classList.add("active-img");
 }
 
+function Show() {
+    $('body,html').scrollTop(0);
+    $('.modal-connect').fadeIn();
+}
+
+function Hide() {
+    $('.modal-connect').fadeOut();
+}
+
+function ShowSuccess() {
+    $('.success-modal').fadeIn();
+}
+
+function HideSuccess() {
+    $('.success-modal').fadeOut();
+}
+
 $(document).ready(function(){
   $('.slider__slick').slick({
     arrows: false,
@@ -312,3 +329,4 @@ $(document).ready(function(){
     slidesToScroll: 1
   });
 });
+

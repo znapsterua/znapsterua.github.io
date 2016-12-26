@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tolik.css">
+
+</head>
+<body>
+	<div class="wrapper-page">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a href="index.html" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="#">Проектирование</a></li>
+									<li class="dropdown__link"><a class="special__link" href="advert.html">Реклама</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Дизайн</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться на главную</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a href="#" class="social__text">Facebook</a>
+						<a href="#" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/concept1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+				</div>
+				<div class="main__sidebar">
+					<div class="sidebar__nav">
+						<ul class="nav__pages">
+							<li class="pages__link"><a href="#" class="link__menu">Концепция</a></li>
+							<li class="pages__link"><a href="menu.html" class="link__menu active-text">Меню</a></li>
+							<li class="pages__link"><a href="brand.html" class="link__menu">Брендинг</a></li>
+							<li class="pages__link"><a href="design.html" class="link__menu">Проектирование</a></li>
+							<li class="pages__link"><a href="#" class="link__menu">Реклама</a></li>
+							<li class="pages__link"><a href="control.html" class="link__menu">Управление</a></li>
+							<li class="pages__link"><a href="#" class="link__menu">Startup</a></li>
+						</ul>
+					</div>
+					<div class="sidebar__pagination">
+						<div class="pagination__items">
+							<ul class="items__lines">
+								<li class="lines__item active-item" onclick='Slide(0)'></li>
+								<li class="lines__item" onclick='Slide(1)'></li>
+								<li class="lines__item" onclick='Slide(2)'></li>
+								<li class="lines__item" onclick='Slide(3)'></li>
+								<li class="lines__item" onclick='Slide(4)'></li>
+							</ul>
+						</div>
+						<div class="pagination__help">
+							<span class="help__word">Вниз</span>
+						</div>
+					</div>
+					<div class="main__page_name">
+						<h2 class="page__canape">Концепция</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap-brand">
+		<div class="brand__about align-cont">
+			<div class="about__dscr">
+				<div class="cover_dscr">
+					<h2 class="dscr__title_page">Концепция</h2>
+					<p class="concept__text">
+						Мы считаем, что входить в проект без концепции не имеет смысла.
+					</p>
+					<p class="concept__text">
+						Мы рекомендуем описывать концепцию, до того, как реализации, что бы в ходе работы не оставалось вопросов.
+					</p>
+					<p class="concept__text">
+						Концепция – это регламент, в котором заключен свод законов, по которым существует заведение.
+					</p>
+					<p class="concept__text">
+						Создание этих правил в начале проекта ответит вам в последствии на все вопросы, которые только могут у вас возникнуть, от «какой логотип необходим этому заведению» до «Кто должен обслуживать гостей».
+					</p>
+					<p class="concept__text">
+						Без четко сформулированной концепции у вас не будет понимания конкретного рынка, в конкретное время. 
+					</p>
+					<p class="concept__text">
+						Наша команда берет на себя полную ответственность в создании первоклассного заведения.
+					</p>
+					<p class="concept__text">
+						Мы не знаем слова «нет», у нас всегда есть решение
+					</p>
+					<p class="concept__text">
+						Мы можем открыть любое заведение с нуля.
+					</p>
+				</div>
+			</div>
+			<div class="about__img">
+				<span class="img__line color_c color_concept"></span>
+				<img class="img__same_blog" src="assets/img/compressed/concept2.jpg">
+			</div>
+		</div>
+
+		
+
+		<div class="brand__blog">
+			<div class="menu__seo">
+				<div class="seo__drink">
+					<img class="drink__img" src="assets/img/compressed/concept3.jpg">
+				</div>
+				<div class="seo__text">
+					<div class="text__forseo">
+						<h5 class="forseo__title">Вопросы, на которые отвечает 
+концепция:</h5>
+						<ul class="forseo__list dscr__same_lists">
+							<li class="same__list_item">- какова сейчас ситуация на конкретном рынке? 
+</li>
+							<li class="same__list_item">- какой будет формат у заведения?</li>
+							<li class="same__list_item">- где будет находится заведение?</li>
+							<li class="same__list_item">- кто целевая аудитория этого заведения?</li>
+							<li class="same__list_item">- как будет называться заведения?</li>
+							<li class="same__list_item">- какой будет фирменный стиль?</li>
+							<li class="same__list_item">- какой мотивация целевой аудитории?</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="blog__title">
+				<p class="title__dev">Нами созданы концепции меню</p>
+			</div>
+			<div class="blog__flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name">Some like it hot</h3>
+						<p class="left__name_dscr">
+							Очень интересным и необычным получился проект «Some like it hot», исполненный в формате coffee&bar. Интерьер объединяет комфорт, простоту и функциональность. За основу взяты белый и серый цвета, разбавленные теплыми и мягкими оттенками желтого и бирюзового. 
+						</p>
+						<a href="project.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right">
+					<img class="right__pic" src="assets/img/compressed/concept4.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex">
+				<div class="flex__left rev-left">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">Eatery</h3>
+						<p class="left__name_dscr">
+							После проведения некоторого анализа рынка, складывается понимание о его игроках и местах которые они занимают. Затем определяют общую идею, которую мы называем концепция. Концепция - это руководящая идея, система взглядов, то есть основная точка зрения. 
+						</p>
+						<a href="eatery.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right">
+					<img class="right__pic" src="assets/img/compressed/concept5.jpg">
+				</div>
+			</div>
+			<div class="blog__flex start-flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name pos-after">Шоколадка</h3>
+						<p class="left__name_dscr">
+							После проведения некоторого анализа рынка, складывается понимание о его игроках и местах которые они занимают. Затем определяют общую идею, которую мы называем концепция. Концепция - это руководящая идея, система взглядов, то есть основная точка зрения. 
+						</p>
+						<a href="wokoladka.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right size-pic">
+					<img class="right__pic" src="assets/img/compressed/cpncept6.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex-sec">
+				<div class="flex__left rev-left-sec">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">Япошка</h3>
+						<p class="left__name_dscr">
+							Разработан и воплощен в жизнь дизайн-проект ресторана с уже полюбившейся японской кухней в центре города, в котором будет приятно провести свободное время, деловую встречу и просто перекусить. Создан «образ» заведения, начиная от архитектурного проектирования… 
+						</p>
+						<a href="yaposhka.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right">
+					<img class="right__pic" src="assets/img/compressed/concept7.jpg">
+				</div>
+			</div>
+			<div class="blog__flex last-blog">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name size-after">Sweeter</h3>
+						<p class="left__name_dscr">
+							Мини-кофейни в центре жизни большого города, площадью от 5м2! Формат coffee to go - это быстрое обслуживание, возможность насладиться любимым кофе внутри помещений и забрать напиток с собой. Открытая зона бара для приобщения Гостей к процессу приготовления кофе. 
+						</p>
+						<a href="sweeter.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right">
+					<img class="right__pic" src="assets/img/compressed/concept18.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex">
+				<div class="flex__left rev-left">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">Take the cake</h3>
+						<p class="left__name_dscr">
+							Была разработана концепция, бизнес план для кондитерских-магазинов, где каждый любитель сладкого мог бы найти десерт по душе, продегустировать его в кондитерской или забрать с собой. Было запущено производство тортов и десертов - главной гордости кондитерской.
+
+						</p>
+						<a class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right picture-size">
+					<img class="right__pic" src="assets/img/compressed/concept8.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex-sec last-blog">
+				<div class="flex__left rev-left-sec">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">25 Coffee Roasters</h3>
+						<p class="left__name_dscr">
+							После проведения некоторого анализа рынка, складывается понимание о его игроках и местах которые они занимают. Затем определяют общую идею, которую мы называем концепция. Концепция - это руководящая идея, система взглядов, то есть основная точка зрения. 
+						</p>
+						<a href="roast.html" class="left__btn block__btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right">
+					<img class="right__pic" src="assets/img/compressed/roastnew.jpg">
+				</div>
+			</div>
+			<div class="another">
+				<h4 class="another__title">
+					Другие наши услуги
+				</h4>
+			</div>
+		</div>
+		<footer class="flex-nav">
+			<ul class="nav__footer">
+				<li class="footer__item"><a class="item__link_footer" href="#">Концепция</a></li>
+				<li class="footer__item"><a class="item__link_footer after-foot" href="menu.html">Меню</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="brand.html">Брендинг</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="design.html">Проектирование</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Реклама</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="control.html">Управление</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Startup</a></li>
+			</ul>
+		</footer>
+	</div>
+
+	
+
+
+
+<div class="modal">
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Рестранное агенство</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a5.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>

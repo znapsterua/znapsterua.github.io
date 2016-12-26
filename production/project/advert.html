@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tolik.css">
+</head>
+<body>
+	<div class="wrapper-page">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a href="#" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="#">Проектирование</a></li>
+									<li class="dropdown__link"><a class="special__link" href="advert.html">Реклама</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Дизайн</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться на главную</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a href="#" class="social__text">Facebook</a>
+						<a href="#" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/1a.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+				</div>
+				<div class="main__sidebar">
+					<div class="sidebar__nav">
+						<ul class="nav__pages">
+							<li class="pages__link"><a class="link__menu">Концепция</a></li>
+							<li class="pages__link"><a class="link__menu">Меню</a></li>
+							<li class="pages__link"><a class="link__menu">Брендинг</a></li>
+							<li class="pages__link"><a class="link__menu">Проектирование</a></li>
+							<li class="pages__link"><a class="link__menu">Реклама</a></li>
+							<li class="pages__link active-text"><a class="link__menu">Управление</a></li>
+							<li class="pages__link"><a class="link__menu">Startup</a></li>
+						</ul>
+					</div>
+					<div class="sidebar__pagination">
+						<div class="pagination__items">
+							<ul class="items__lines">
+								<li class="lines__item active-item" onclick='Slide(0)'></li>
+								<li class="lines__item" onclick='Slide(1)'></li>
+								<li class="lines__item" onclick='Slide(2)'></li>
+								<li class="lines__item" onclick='Slide(3)'></li>
+								<li class="lines__item" onclick='Slide(4)'></li>
+							</ul>
+						</div>
+						<div class="pagination__help">
+							<span class="help__word">Вниз</span>
+						</div>
+					</div>
+					<div class="main__page_name">
+						<h2 class="page__canape">Реклама</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap-brand">
+		<div class="brand__about brand__about_adv">
+			<div class="about__dscr about__dscr_mod">
+				<div class="cover_dscr cover_dscr_mod">
+					<h2 class="dscr__title_page">Реклама</h2>
+					<p class="dscr__title_dscr dscr__title_dscr_mod">
+						Мы сделаем рекламную компанию рентабельной в рамках бюджетов реальных для ресторанов.
+					</p>
+					<p class="dscr__title_dscr dscr__title_dscr_mod">
+						Реклама ресторана
+					</p>
+					<p class="dscr__title_dscr dscr__title_dscr_mod">
+						«На данный момент, реалии таковы, что без рекламы проект не имеет права на существование. Но даже те, кто заказывают рекламную продукцию, и стараются сделать свой ресторан узнаваемым могут попасть в самые распространенные ловушки. Это некачественный материал для рекламных носителей, и абсолютное непонимание своей Целевой аудитории»
+					</p>
+					<p class="dscr__title_dscr dscr__title_dscr_mod">
+						Хороший ресторан рекламирует себя сам ­­­ —и это правда. В первую очередь, рекламу ресторану и отменную репутацию создают гости, которые уходят с хорошим настроением. Они обязательно придут ещё раз и даже приведут друзей. Они будут множить и распространять положительное мнение о заведении подобно солидному тиражу высококачественной полиграфии.
+					</p>
+					<p class="dscr__title_dscr dscr__title_dscr_mod dscr__title_dscr_mod_adv">
+						Но важно понимание того, что раскрутить ресторан только на добром слове будет непросто. Любое, даже самое успешное дело нужно поддерживать, холить, лелеять, кормить. К тому же заведение на стадии запуска и то, что уже работает, требуют разных рекламных подходов и маркетинговых стратегий продвижения бизнеса. И причем часто грамотный старт повлечет за собой меньшие финансовые влияния в рекламу, чем ребрендинг ресторана или перестройка старой, не приносящей плодов рекламной стратегии.
+					</p>
+				</div>
+			</div>
+			<div class="about__img">
+				<span class="img__line color_b color_a"></span>
+				<img class="img__same_blog" src="assets/img/compressed/2a.jpg">
+			</div>
+		</div>
+		<div class="control__content control__content_adv">
+			<div class="content__flex_rev">
+				<div class="flex__img_ctrl">
+					<img class="img__size" src="assets/img/compressed/3a.jpg">
+				</div>
+				<div class="flex__text_ctrl">
+					<p class="text__coolman">
+						В первую очередь, рекламу ресторану и отменную репутацию создают гости, которые уходят с хорошим настроением. Они обязательно придут ещё раз и даже приведут друзей. Они обязательно придут ещё раз и даже приведут друзей. Они будут множить и распространять положительное мнение о заведении подобно солидному тиражу высококачественной полиграфии.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="adv__company">
+
+			<div class="adv__company_first">
+				<div class="adv__asset">
+					<span class="adv__asset_text">Как должна строится рекламная кампания</span>
+					<span class="adv__asset_line"></span>
+				</div>
+				<span class="adv_count">01</span>
+				<span class="adv_dscrpt">Определение интересов</span>
+				<span class="adv_count">02</span>
+				<span class="adv_dscrpt">Определение местоположения</span>
+				<span class="adv_count">03</span>
+				<span class="adv_dscrpt">Поиск трендов</span>
+			</div>
+			<div class="adv__company_second">
+				<span class="adv_count">04</span>
+				<span class="adv_dscrpt">Создание рекламной концепции</span>
+				<span class="adv_count">05</span>
+				<span class="adv_dscrpt">Выбор корректных носителей</span>
+				<span class="adv_count">06</span>
+				<span class="adv_dscrpt">Создание рекламной продукции</span>
+			</div>
+		</div>
+		<div class="brand__blog top-space">
+			<div class="another">
+				<h4 class="another__title">
+					Другие наши услуги
+				</h4>
+			</div>
+		</div>
+		<footer class="flex-nav">
+			<ul class="nav__footer">
+				<li class="footer__item"><a class="item__link_footer" href="#">Концепция</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Меню</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Брендинг</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Проектирование</a></li>
+				<li class="footer__item"><a class="item__link_footer after-foot" href="#">Реклама</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Управление</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="#">Startup</a></li>
+			</ul>
+		</footer>
+	</div>
+
+	
+
+
+
+
+	<div class="modal">
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Рестранное агенство</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a5.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>

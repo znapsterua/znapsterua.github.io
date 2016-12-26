@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tolik.css">
+</head>
+<body>
+	<div class="wrapper-page">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a href="index.html" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="#">Проектирование</a></li>
+									<li class="dropdown__link"><a class="special__link" href="advert.html">Реклама</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Дизайн</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться на главную</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a href="#" class="social__text">Facebook</a>
+						<a href="#" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img home_img_about">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/about1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+					<div class="block_about">
+						<span class="about_title">Мы - команда Canape!</span>
+						<span class="about_img"><img src="assets/img/compressed/star.png" alt=""></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap-brand wrap_brand_about">
+		
+		<div class="brand__blog brand_about">
+			<div class="team_holder">
+				<div class="team_column team_column_first">
+					<div class="team_member">
+						<div class="member_img_holder member_lead alex">
+							<div class="member__info">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Александр Андреев</p>
+									<p class="member_position">Учредитель</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="team_member">
+						<div class="member_img_holder member_mari mari">
+							<div class="member__info info_mari">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Мария Целик</p>
+									<p class="member_position">Ведущий архитектор </p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="team_member">
+						<div class="member_img_holder member_a andrew">
+							<div class="member__info info_andrew">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Андрей Бондажевский</p>
+									<p class="member_position">Менеджер по продажам проектов </p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="pagination_about">
+						<ul class="about__lines">
+							<li class="about__item dark_one"></li>
+							<li class="about__item dark_two"></li>
+							<li class="about__item dark_three"></li>
+							<li class="about__item dark_four"></li>
+							<li class="about__item dark_six"></li>
+							<li class="about__item dark_seven"></li>
+							<li class="about__item dark_eight"></li>
+						</ul>
+					</div>
+					<div class="team_member">
+						<div class="member_img_holder daria">
+							<div class="member__info daria_info">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Дарья Стеценко</p>
+									<p class="member_position">Ведущий графический дизайнер </p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="team_column">
+					<div class="pagination_about">
+						<ul class="about__lines">
+							<li class="about__item dark_one"></li>
+							<li class="about__item dark_two"></li>
+							<li class="about__item dark_three"></li>
+							<li class="about__item dark_four"></li>
+							<li class="about__item dark_six"></li>
+							<li class="about__item dark_seven"></li>
+							<li class="about__item dark_eight"></li>
+						</ul>
+					</div>
+					<div class="member_img_holder lena">
+						<div class="member__info">
+							<span class="member_line"></span>
+							<div class="member_info_holder">
+								<p class="member_name">Лена Семенюк</p>
+								<p class="member_position">Руководитель отдела маркетинга </p>
+							</div>
+						</div>
+					</div>
+					<div class="member_img_holder masha">
+						<div class="member__info">
+							<span class="member_line"></span>
+							<div class="member_info_holder">
+								<p class="member_name">Мария Павлюк</p>
+								<p class="member_position">Архитектор</p>
+							</div>
+						</div>
+					</div>
+					<div class="team_member">
+						<div class="member_img_holder zhenya">
+							<div class="member__info info_zhenya">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Евгения Ячменева</p>
+									<p class="member_position">Менеджер проектов</p>
+								</div>
+							</div>
+						</div>	
+					</div>	
+					<div class="team_member">
+						<div class="member_img_holder tania">
+							<div class="member__info info_tania">
+								<span class="member_line"></span>
+								<div class="member_info_holder">
+									<p class="member_name">Татьяна Кизим</p>
+									<p class="member_position">Графический дизайнер</p>
+								</div>
+							</div>
+						</div>	
+					</div>		
+				</div>
+				<div class="team_column_mob">
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about2.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Александр Андреев</p>
+							<p class="member_position_mob">Учредитель</p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about3.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Елена Семенюк</p>
+							<p class="member_position_mob">Руководитель отдела
+маркетинга </p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about4.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Мария Целик</p>
+							<p class="member_position_mob">Ведущий архитектор</p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about5.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Мария Павлюк</p>
+							<p class="member_position_mob">Архитектор</p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about6.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Андрей Бондажевский</p>
+							<p class="member_position_mob">Менеджер по продажам проектов </p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about7.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Евгения Ячменёва</p>
+							<p class="member_position_mob">Менеджер проектов</p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about8.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Дарья Стеценко</p>
+							<p class="member_position_mob">Ведущий графический дизайнер </p>
+						</div>
+					</div>
+					<div class="member_mob_holder">
+						<div class="member_img_mob">
+							<img src="assets/img/compressed/about9.jpg" alt="">
+						</div>
+						<div class="member_info_mob">
+							<p class="member_name_mob">Татьяна Кизим</p>
+							<p class="member_position_mob">Графический дизайнер</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about_last">
+				<div class="about_last_item">
+					<span class="about_last_we">Canape - это мы!</span>
+				</div>	
+				<div class="about_last_img_holder">
+					<img src="assets/img/compressed/aboutlast.jpg" alt="">
+				</div>
+				<div class="info__canape info_canape_about">
+					<p class="canape__btn_text">Хочешь к нам в команду?</p>
+					<a class="canape__btn block__btn">Напиши!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+
+
+	<div class="modal">
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Рестранное агенство</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a5.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+			<div class="content__img">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>
