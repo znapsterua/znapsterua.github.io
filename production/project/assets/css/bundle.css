@@ -3048,6 +3048,10 @@ a {
   background-size: cover;
 }
 
+.white-nav {
+  color white
+}
+
 @media screen and (max-width: 1500px) {
   .display-proj {
     display: none;
