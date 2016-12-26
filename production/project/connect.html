@@ -7,12 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header class="position">
+	<div class="wrapper-page main__connect">
+		<header class="position conn-pos">
 			<div class="content flex">
 				<div class="content__head">
 					<div class="head__logo">
-						<a class="logo__link" onclick='AjaxE(0)'><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
+						<a href="index.html" class="logo__link"><img src="assets/img/compressed/logo.png" class="link__logo_img"></a>
 					</div>
 					<div class="head__nav">
 						<ul class="nav__list">
@@ -66,7 +66,7 @@
 			</div>
 		</header>
 		<div class="social">
-			<div class="social__connect">
+			<div class="social__connect zindex-con">
 				<div class="connect__content">
 					<p class="content__contact">Связаться с нами</p>
 					<div class="content__social">
@@ -81,47 +81,66 @@
 				<div id="line" class="item__rotate"></div>
 			</div>
 		</div>
-		<div id='wrap' class="wrap">
-			<div class="main">	
-				<div class="home_img">
-					<img class="home_background" src="assets/img/compressed/main.jpg">
+		<div id='wrap' class="wrap connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+					</form>
 				</div>
-				<div class="main__sidebar">
-					<div class="sidebar__nav">
-						<ul class="nav__pages">
-							<li class="pages__link active-text"><a class="link__menu">Концепция</a></li>
-							<li class="pages__link"><a class="link__menu">Меню</a></li>
-							<li class="pages__link"><a class="link__menu">Брендинг</a></li>
-							<li class="pages__link"><a class="link__menu">Проектирование</a></li>
-							<li class="pages__link"><a class="link__menu">Реклама</a></li>
-							<li class="pages__link"><a class="link__menu">Управление</a></li>
-							<li class="pages__link"><a class="link__menu">Startup</a></li>
-						</ul>
-					</div>
-					<div class="sidebar__pagination">
-						<div class="pagination__items">
-							<ul class="items__lines">
-								<li class="lines__item active-item" onclick='AjaxE(1)'></li>
-								<li class="lines__item" onclick='AjaxE(2)'></li>
-								<li class="lines__item" onclick='AjaxE(3)'></li>
-								<li class="lines__item" onclick='AjaxE(4)'></li>
-								<li class="lines__item" onclick='AjaxE(5)'></li>
-								<li class="lines__item" onclick='AjaxE(6)'></li>
-								<li class="lines__item" onclick='AjaxE(7)'></li>
-							</ul>
-						</div>
-						<div class="pagination__help">
-							<span class="help__word" onclick="AjaxE(1)">Вниз</span>
-						</div>
-					</div>
-				</div>
-				<div class="main__title">
-					<h1 class="title__canape">Canape</h1>
-					<p class="title__dscr">Рестранное агенство</p>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
 				</div>
 			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
 		</div>
 	</div>
+	
+
 	<div class="modal">
 		<div class="modal__header">
 			<h2 class="header__title">Canape</h2>
@@ -239,6 +258,5 @@
 	</div>
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bundle.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

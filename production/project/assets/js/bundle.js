@@ -307,19 +307,8 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     infinite: true,
-    speed: 300,
     slidesToShow: 2,
-    centerMode: true,
     variableWidth: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-    {
-      breakpoint: 720,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
-  ]
+    slidesToScroll: 1
   });
 });
