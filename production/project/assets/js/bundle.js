@@ -10,12 +10,6 @@ Modal.prototype.helper = function () {
 }
 
 Modal.prototype.showModal = function () {
-    if(document.querySelector('.wrapper')) {
-        document.querySelector('.wrapper').style.display = 'none';
-    }
-    if(document.querySelector('.wrapper-page')) {
-        document.querySelector('.wrapper-page').style.display = 'none';
-    }
     this.show.css("display", "none");
     this.hide.css("display", "block");
     this.modal.fadeIn();
@@ -51,12 +45,6 @@ Modal.prototype.animate = function (count) {
 }
 
 Modal.prototype.hideModal = function () {
-    if(document.querySelector('.wrapper')) {
-        document.querySelector('.wrapper').style.display = 'block';
-    }
-    if(document.querySelector('.wrapper-page')) {
-        document.querySelector('.wrapper-page').style.display = 'block';
-    }
     $('.project__cross').css('transform', 'rotate(0deg)')
     $('.hide_show').css('opacity', '0');
     setTimeout(function() {
@@ -80,21 +68,9 @@ new Modal($('#show'), $('#hide'), $('.modal'));
 
 function ShowModal(){
     $('.modal').fadeIn()
-    if(document.querySelector('.wrapper')) {
-        document.querySelector('.wrapper').style.display = 'none';
-    }
-    if(document.querySelector('.wrapper-page')) {
-        document.querySelector('.wrapper-page').style.display = 'none';
-    }
 }
 
 function HideModal(){
-    if(document.querySelector('.wrapper')) {
-        document.querySelector('.wrapper').style.display = 'block';
-    }
-    if(document.querySelector('.wrapper-page')) {
-        document.querySelector('.wrapper-page').style.display = 'block';
-    }
     $('.modal').fadeOut()
 }
 
