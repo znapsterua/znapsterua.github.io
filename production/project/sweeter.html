@@ -7,10 +7,75 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/tolik.css">
 </head>
 <body>
 	<div class="wrapper-page wrap-proj">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
 		<header class="position position-nav">
 			<div class="content flex">
 				<div class="content__head">
@@ -20,7 +85,7 @@
 					<div class="head__nav">
 						<ul class="nav__list">
 							<li class="list__item" id="list">
-								<a href="#" class="item__page white-nav" id="drop">Наши услуги</a>
+								<a href="#" class="item__page" id="drop">Наши услуги</a>
 								<ul class="item__dropdown" id="down">
 									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
 									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
@@ -32,10 +97,10 @@
 
 								</ul>
 							</li>
-							<li class="list__item"><a href="aboutus.html" class="item__page white-nav">О Нас</a></li>
-							<li class="list__item"><a href="contact.html" class="item__page white-nav">Контакты</a></li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
 						</ul>
-						<div class="mobile-nav">
+						<div class="mobile-nav" onclick="ShowModal()">
 							<span class="mobile__line"></span>
 							<span class="mobile__line"></span>
 							<span class="mobile__line"></span>
@@ -72,7 +137,7 @@
 		<div class="social display-proj">
 			<div class="social__connect">
 				<div class="connect__content">
-					<p class="content__contact">Связаться с нами</p>
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
 					<div class="content__social">
 						<a href="#" class="social__text">Facebook</a>
 						<a href="#" class="social__text">Instagram</a>
@@ -221,9 +286,9 @@
 	</div>
 	<div class="menu__footer">
 		<div class="footer__btns">
-			<a href="#" class="btns__prev">Посмотреть предыдущий проект</a>
-			<a href="#" class="btns__next">Посмотреть следующий проект</a>
-			<a href="#" class="btns__conn">Связаться с нами</a>
+			<a href="wokoladka.html" class="btns__prev">Посмотреть предыдущий проект</a>
+			<a href="ricco.html" class="btns__next">Посмотреть следующий проект</a>
+			<a onclick="Show()" class="btns__conn">Связаться с нами</a>
 		</div>
 		<div class="footer__fill"></div>
 	</div>
@@ -232,13 +297,19 @@
 
 
 
-<div class="modal">
+		<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
 		<div class="modal__header">
 			<h2 class="header__title">Canape</h2>
 			<p class="header__dscr">Рестранное агенство</p>
 		</div>
-		<div class="modal__content">
-			<div class="content__img" onclick="location.href='project.html'">
+		<div class="modal__content" onclick="location.href='project.html'">
+			<div class="content__img">
 				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
 				<div class="img__plus">
 					<div class="plus__block">
@@ -322,7 +393,7 @@
 					<p class="dscr__name">Eatery</p>
 				</div>
 			</div>
-			<div class="content__img">
+			<div class="content__img" onclick="location.href='roast.html'">
 				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
 				<div class="img__plus">
 					<div class="plus__block">

@@ -172,28 +172,24 @@
 	display: flex;
 	flex: row nowrap;
 }
+
 .alex{
-	background-image: url(../img/compressed/about2.jpg);
-}
-.mari{
-	background-image: url(../img/compressed/about4.jpg);
-}
-.andrew{
-	background-image: url(../img/compressed/about6.jpg);
-}
-.daria{
-	background-image: url(../img/compressed/about8.jpg);
-}
-.alex:hover{
 	background-image: url(../img/compressed/hover1.jpg);
 }
-.mari:hover{
+.member_hover{
+	width: 100%;
+	height: auto;
+}
+.member_img_holder:hover .member_hover{
+	display: none
+}
+.mari{
 	background-image: url(../img/compressed/hover2.jpg);
 }
-.andrew:hover{
+.andrew{
 	background-image: url(../img/compressed/5.jpg);
 }
-.daria:hover{
+.daria{
 	background-image: url(../img/compressed/hover4.jpg);
 }
 .member_lead{
@@ -205,9 +201,7 @@
 .member_a{
 	margin-bottom: 200px;
 }
-/*.pagination_about{
-	margin: 250px;
-}*/
+
 .member__info{
 
 	display: flex;
@@ -258,15 +252,7 @@
 .team_column{
 	margin-top: 100px;
 }
-/*.member_name::after{
-	content: '';
-	position: absolute;
-	border-top: 1px solid #000;
-	width: 151px;
-	left: -80%;
-	top: 105%;
-	height: 1px;
-}*/
+
 .pagination_about_2{
 	margin-top: 60px;
 	margin-bottom: 150px;
@@ -298,34 +284,28 @@
 	margin-right: 140px;
 }
 
+
 .lena{
-	background-image: url(../img/compressed/lena.jpg);
-	margin-top: 360px;
-}
-.lena:hover{
 	background-image: url(../img/compressed/lenahover.jpg);
+	margin-top: 360px;
 }
 
 
 .info_mari{
 	top: 44%;
 }
+
 .masha{
-	background-image: url(../img/compressed/masha.jpg);
-	margin-top: 270px;
-}
-.masha:hover{
 	background-image: url(../img/compressed/mashahover.jpg);
+	margin-top: 140px;
 }
 .info_andrew{
 	top: 80%;
 }
+
 .zhenya{
-	background-image: url(../img/compressed/zhenya.jpg);
-	margin-top: 200px;
-}
-.zhenya:hover{
 	background-image: url(../img/compressed/zhenyahover.jpg);
+	margin-top: 200px;
 }
 .info_zhenya{
 	top: 70%;
@@ -333,12 +313,10 @@
 .daria_info{
 	top: 50%;
 }
+
 .tania{
-	background-image: url(../img/compressed/tania.jpg);
-	margin-top: 300px;
-}
-.tania:hover{
 	background-image: url(../img/compressed/taniahover.jpg);
+	margin-top: 300px;
 }
 .team_column_mob{
 	display: none;
@@ -370,10 +348,6 @@
 .about_last_img_holder{
 	margin-top: -30px;
 	z-index: -1;
-}
-
-.white-nav {
-  color: white;
 }
 @media only screen and (max-width : 1456px) {
 	.member_line{
@@ -536,11 +510,18 @@
     display: flex;
     justify-content: flex-end;
 }
+.team_member_sec{
+	flex-basis: 70%;
+}
+.pagination_about_sec{
+	align-self: flex-end;
+    text-align: right;
+    margin-right: 300px;
+}
 
-
-
-
-
+.pagination_about_b{
+	margin-top: 100px;
+}
 
 
 

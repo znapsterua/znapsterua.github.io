@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/tolik.css">
 </head>
@@ -89,9 +91,8 @@
 									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
 									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
 									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
-									<li class="dropdown__link"><a class="special__link" href="#">Проектирование</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проектирование</a></li>
 									<li class="dropdown__link"><a class="special__link" href="advert.html">Реклама</a></li>
-									<li class="dropdown__link"><a class="special__link" href="design.html">Дизайн</a></li>
 									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
 
 								</ul>
@@ -99,7 +100,7 @@
 							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
 							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
 						</ul>
-						<div class="mobile-nav">
+						<div class="mobile-nav" onclick="ShowModal()">
 							<span class="mobile__line"></span>
 							<span class="mobile__line"></span>
 							<span class="mobile__line"></span>
@@ -152,22 +153,14 @@
 		<div id='wrap' class="wrap">
 			<div class="main">	
 				<div class="home_img home_img_about">
-					<ul class="img_list">
+					<ul class="list_about">
 						<li class="list-img">
 							<img class="home_background" src="assets/img/compressed/about1.jpg">
 						</li>
 						<li class="list-img">
-							<img class="home_background" src="assets/img/compressed/img1.jpg">
+							<img class="home_background" src="assets/img/compressed/aboutlast.jpg">
 						</li>
-						<li class="list-img">
-							<img class="home_background" src="assets/img/compressed/img2.jpg">
-						</li>
-						<li class="list-img">
-							<img class="home_background" src="assets/img/compressed/img3.jpg">
-						</li>
-						<li class="list-img">
-							<img class="home_background" src="assets/img/compressed/img4.jpg">
-						</li>
+						
 					</ul>
 					<div class="block_about">
 						<span class="about_title">Мы - команда Canape!</span>
@@ -184,6 +177,7 @@
 				<div class="team_column team_column_first">
 					<div class="team_member">
 						<div class="member_img_holder member_lead alex">
+							<img src="assets/img/compressed/about2.jpg" alt="" class="member_hover">
 							<div class="member__info">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -195,6 +189,7 @@
 					</div>
 					<div class="team_member">
 						<div class="member_img_holder member_mari mari">
+						<img src="assets/img/compressed/about4.jpg" alt="" class="member_hover">
 							<div class="member__info info_mari">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -206,6 +201,7 @@
 					</div>
 					<div class="team_member">
 						<div class="member_img_holder member_a andrew">
+							<img src="assets/img/compressed/about6.jpg" alt="" class="member_hover">
 							<div class="member__info info_andrew">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -228,6 +224,7 @@
 					</div>
 					<div class="team_member">
 						<div class="member_img_holder daria">
+							<img src="assets/img/compressed/about8.jpg" alt="" class="member_hover">
 							<div class="member__info daria_info">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -239,8 +236,8 @@
 					</div>
 				</div>
 
-				<div class="team_column">
-					<div class="pagination_about">
+				<div class="team_column team_member_sec">
+					<div class="pagination_about pagination_about_sec">
 						<ul class="about__lines">
 							<li class="about__item dark_one"></li>
 							<li class="about__item dark_two"></li>
@@ -252,6 +249,7 @@
 						</ul>
 					</div>
 					<div class="member_img_holder lena">
+						<img src="assets/img/compressed/lena.jpg" alt="" class="member_hover">
 						<div class="member__info">
 							<span class="member_line"></span>
 							<div class="member_info_holder">
@@ -260,7 +258,19 @@
 							</div>
 						</div>
 					</div>
+					<div class="pagination_about pagination_about_sec pagination_about_b">
+						<ul class="about__lines">
+							<li class="about__item dark_one"></li>
+							<li class="about__item dark_two"></li>
+							<li class="about__item dark_three"></li>
+							<li class="about__item dark_four"></li>
+							<li class="about__item dark_six"></li>
+							<li class="about__item dark_seven"></li>
+							<li class="about__item dark_eight"></li>
+						</ul>
+					</div>
 					<div class="member_img_holder masha">
+						<img src="assets/img/compressed/masha.jpg" alt="" class="member_hover">
 						<div class="member__info">
 							<span class="member_line"></span>
 							<div class="member_info_holder">
@@ -271,6 +281,7 @@
 					</div>
 					<div class="team_member">
 						<div class="member_img_holder zhenya">
+							<img src="assets/img/compressed/zhenya.jpg" alt="" class="member_hover">
 							<div class="member__info info_zhenya">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -282,6 +293,7 @@
 					</div>	
 					<div class="team_member">
 						<div class="member_img_holder tania">
+							<img src="assets/img/compressed/tania.jpg" alt="" class="member_hover">
 							<div class="member__info info_tania">
 								<span class="member_line"></span>
 								<div class="member_info_holder">
@@ -377,7 +389,7 @@
 				</div>
 				<div class="info__canape info_canape_about">
 					<p class="canape__btn_text">Хочешь к нам в команду?</p>
-					<a class="canape__btn block__btn">Напиши!</a>
+					<a class="canape__btn block__btn" onclick="Show()">Напиши!</a>
 				</div>
 			</div>
 		</div>
@@ -388,13 +400,19 @@
 
 
 
-	<div class="modal">
+		<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
 		<div class="modal__header">
 			<h2 class="header__title">Canape</h2>
 			<p class="header__dscr">Рестранное агенство</p>
 		</div>
-		<div class="modal__content">
-			<div class="content__img" onclick="location.href='project.html'">
+		<div class="modal__content" onclick="location.href='project.html'">
+			<div class="content__img">
 				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
 				<div class="img__plus">
 					<div class="plus__block">
@@ -478,7 +496,7 @@
 					<p class="dscr__name">Eatery</p>
 				</div>
 			</div>
-			<div class="content__img">
+			<div class="content__img" onclick="location.href='roast.html'">
 				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
 				<div class="img__plus">
 					<div class="plus__block">
@@ -504,6 +522,20 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.js"></script>
 	<script type="text/javascript" src="assets/js/bundle.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.list_about').slick({
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 3000,
+			dragable: true,
+		  });
+		});
+	</script>
 </body>
 </html>
