@@ -51,6 +51,12 @@ Modal.prototype.animate = function (count) {
 }
 
 Modal.prototype.hideModal = function () {
+    if(document.querySelector('.wrapper')) {
+        document.querySelector('.wrapper').style.display = 'block';
+    }
+    if(document.querySelector('.wrapper-page')) {
+        document.querySelector('.wrapper-page').style.display = 'block';
+    }
     $('.project__cross').css('transform', 'rotate(0deg)')
     $('.hide_show').css('opacity', '0');
     setTimeout(function() {
