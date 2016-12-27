@@ -10,6 +10,12 @@ Modal.prototype.helper = function () {
 }
 
 Modal.prototype.showModal = function () {
+    if(document.querySelector('.wrapper')) {
+        document.querySelector('.wrapper').style.display = 'none';
+    }
+    if(document.querySelector('.wrapper-page')) {
+        document.querySelector('.wrapper-page').style.display = 'none';
+    }
     this.show.css("display", "none");
     this.hide.css("display", "block");
     this.modal.fadeIn();
