@@ -80,9 +80,21 @@ new Modal($('#show'), $('#hide'), $('.modal'));
 
 function ShowModal(){
     $('.modal').fadeIn()
+    if(document.querySelector('.wrapper')) {
+        document.querySelector('.wrapper').style.display = 'none';
+    }
+    if(document.querySelector('.wrapper-page')) {
+        document.querySelector('.wrapper-page').style.display = 'none';
+    }
 }
 
 function HideModal(){
+    if(document.querySelector('.wrapper')) {
+        document.querySelector('.wrapper').style.display = 'block';
+    }
+    if(document.querySelector('.wrapper-page')) {
+        document.querySelector('.wrapper-page').style.display = 'block';
+    }
     $('.modal').fadeOut()
 }
 
