@@ -220,6 +220,18 @@ a {
   margin-right: 0px;
 }
 
+.item__dropdown:after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 285px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-45deg);
+  background: white;
+}
+
 .logo__link {
   cursor: pointer;
 }
@@ -2324,7 +2336,7 @@ a {
 
 .logo-pic {
   padding: 40px 0px;
-  width: 45%;
+  width: 35%;
   height: auto;
 }
 
@@ -2776,6 +2788,7 @@ a {
   letter-spacing: 1px;
   color: #fff;
   background-color: #343434;
+  cursor: pointer;
 }
 
 .slick-dots li {
@@ -3072,6 +3085,7 @@ a {
 }
 
 .close__box_projects {
+  display: none;
   position: absolute;
   top: 40px;
   right: 30px;
@@ -3617,6 +3631,10 @@ a {
   .header__title {
     font-size: 36px;
   }
+
+  .close__box_projects {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -3911,5 +3929,10 @@ a {
   .form__btn_con {
     padding: 20px 0px;
     width: 90%;
+  }
+
+  .text__forseo, .steps__second, .steps__first, .menu__block, .done__text, .cover-part, .blog__title, .cover_margin, .cover_text {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }

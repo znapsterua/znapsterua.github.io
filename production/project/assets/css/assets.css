@@ -522,6 +522,19 @@
 .pagination_about_b{
 	margin-top: 100px;
 }
+.img6{
+	background: url(../img/compressed/contr_m.jpg) center center no-repeat;
+}
+.img7{
+	background: url(../img/compressed/startup_m.jpg) center center no-repeat;
+}
 
-
-
+.block__head_title{
+	margin-bottom: 50px;
+}
+.menu__footer{
+	margin-bottom: 80px;
+}
+.text__steps_about_mod{
+	margin-bottom: 30px;
+}
