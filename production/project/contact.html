@@ -100,7 +100,7 @@
 						</dl>
 						<div class="info__canape">
 							<p class="canape__btn_text">Хочешь к нам в команду?</p>
-							<a class="canape__btn block__btn" onclick="Show()">Напиши!</a>
+							<a class="canape__btn block__btn" onclick="TeamShow()">Напиши!</a>
 						</div>
 					</div>
 				</div>
@@ -117,6 +117,74 @@
 				<div class="connect__form">
 					<h2 class="form__title">
 						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы ответим вам в течении нескольких минут.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+						<a class="form_briff" href="brif" download>Скачать бриф</a>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-together">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Хотите к нам в команду?
 					</h2>
 					<p class="form__dscr">
 						Отправьте сообщение и мы ответим вам в течении нескольких минут.
@@ -168,7 +236,7 @@
 				</div>
 			</div>
 			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
-			<div class="block__close" onclick="Hide()">
+			<div class="block__close" onclick="TeamHide()">
 				<div class="close__space">
 					<span class="space__line line_rot_a"></span>
 					<span class="space__line line_rot_b"></span>

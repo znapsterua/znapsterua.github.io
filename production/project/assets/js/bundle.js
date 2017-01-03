@@ -56,10 +56,16 @@ Modal.prototype.hideModal = function () {
     if (document.querySelector(".wrapper")) {
         $('body').children().css( "display", "block" );
         $(".modal-connect").css( "display", "none" );
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }
     }
     if (document.querySelector(".wrapper-page")) {
         $('body').children().css( "display", "block" );
         $(".modal-connect").css( "display", "none" );
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }
     }
     $('.project__cross').css('transform', 'rotate(0deg)')
     $('.hide_show').css('opacity', '0');
@@ -98,10 +104,16 @@ function HideModal(){
     if (document.querySelector(".wrapper")) {
         $('body').children().css( "display", "block" );
         $(".modal-connect").css( "display", "none" );
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }
     }
     if (document.querySelector(".wrapper-page")) {
         $('body').children().css( "display", "block" );
         $(".modal-connect").css( "display", "none" );
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }
     }
     $('.modal').fadeOut();
 }
@@ -112,7 +124,7 @@ $('#drop').hover(function(){
     $('#down').fadeIn();
     $('#down').css('display', 'flex');
     $('#list').hover(function(){
-        if(!$("#list").is(":hover")){
+        if(!$("#list").is(":hover") && !$(".nav__list").is(":hover")){
             $('#down').fadeOut(); 
         } 
     });
@@ -214,11 +226,16 @@ function Hide() {
     if (document.querySelector(".wrapper")) {
         $('body').children().css( "display", "block" );
         $(".modal").css( "display", "none" );
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }
     }
     if (document.querySelector(".wrapper-page")) {
         $('body').children().css( "display", "block" );
         $(".modal").css( "display", "none" );
-    }
+        if($(".modal-together")){
+            $(".modal-together").css( "display", "none" );
+        }    }
     $('.modal-connect').fadeOut();
 }
 
@@ -228,6 +245,33 @@ function ShowSuccess() {
 
 function HideSuccess() {
     $('.success-modal').fadeOut();
+}
+
+function TeamShow() {
+    if (document.querySelector(".wrapper")) {
+        $('body').children().css( "display", "none" );
+        $(".wrapper").css( "display", "block" );
+    }
+    if (document.querySelector(".wrapper-page")) {
+        $('body').children().css( "display", "none" );
+        $(".wrapper-page").css( "display", "block" );
+    }
+    $('body,html').scrollTop(0);
+    $('.modal-together').fadeIn();
+}
+
+function TeamHide() {
+    if (document.querySelector(".wrapper")) {
+        $('body').children().css( "display", "block" );
+        $(".modal").css( "display", "none" );
+        $(".modal-connect").css( "display", "none" );
+    }
+    if (document.querySelector(".wrapper-page")) {
+        $('body').children().css( "display", "block" );
+        $(".modal").css( "display", "none" );
+        $(".modal-connect").css( "display", "none" );
+    }
+    $('.modal-together').fadeOut();
 }
 
 
