@@ -232,6 +232,10 @@ a {
   background: white;
 }
 
+.item__dropdown_none:after {
+  display: none;
+}
+
 .logo__link {
   cursor: pointer;
 }
