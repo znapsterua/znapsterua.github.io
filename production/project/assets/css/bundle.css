@@ -2849,8 +2849,8 @@ a {
 .connect-cover {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -2863,6 +2863,7 @@ a {
   padding: 0px 130px;
   margin: 0 auto;
   margin-bottom: 20px;
+  margin-top: 125px;
   max-width: 1250px;
 }
 
@@ -3158,6 +3159,10 @@ a {
   z-index: 11;
   overflow: hidden;
   transition: top 0.5s ease-out;
+}
+
+.menu-fixed .item__page {
+  color: black !important;
 }
 
 .fixed-dropdown {

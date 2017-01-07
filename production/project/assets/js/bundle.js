@@ -307,10 +307,18 @@ Fixed.prototype.move = function() {
         this.header.addClass("menu-fixed");
         this.header.css( "top", "0px" );
         this.drop.addClass("fixed-dropdown");
+        if ($('.some_class').length === 0) {
+            $('.link__logo_img').css( "display", "none" );
+            $('.logo__link').append( "<img src='assets/img/compressed/Canape_logo.svg' class='link__logo_img some_class'>" );
+        }
     }else {
         this.header.removeClass("menu-fixed");
         this.header.css( "top", "-200px" );
         this.drop.removeClass("fixed-dropdown");
+        if ($('.some_class').length !== 0) {
+            $('.link__logo_img')[1].remove();
+            $('.link__logo_img').css( "display", "block" );
+        }
     }
 };
 
