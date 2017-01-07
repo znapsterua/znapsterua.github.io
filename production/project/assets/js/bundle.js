@@ -292,8 +292,9 @@ if(document.querySelector('.slider__slick')){
     Slick();
 }
 
-function Fixed(header) {
+function Fixed(header, drop) {
     this.header = header;
+    this.drop = drop;
     this.helper();
 }
 
@@ -305,10 +306,12 @@ Fixed.prototype.move = function() {
     if (window.pageYOffset > 100) {
         this.header.addClass("menu-fixed");
         this.header.css( "top", "0px" );
+        this.drop.addClass("fixed-dropdown");
     }else {
         this.header.removeClass("menu-fixed");
         this.header.css( "top", "-200px" );
+        this.drop.removeClass("fixed-dropdown");
     }
 };
 
-new Fixed($(".content"));
+new Fixed($(".content"), $(".item__dropdown"));

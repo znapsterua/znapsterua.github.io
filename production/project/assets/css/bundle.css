@@ -2829,7 +2829,7 @@ a {
   display: none;
   top: 0px;
   width: 100%;
-  min-height: 710px;
+  min-height: 720px;
   height: 100%;
   background-color: #fff;
   z-index: 9;
@@ -2893,7 +2893,7 @@ a {
 }
 
 .form__dscr {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -2926,11 +2926,11 @@ a {
 }
 
 .main__textarea {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
   border: none;
   border-bottom: solid 2px #a4a4a4;
-  height: 200px;
+  height: 180px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -3158,6 +3158,13 @@ a {
   z-index: 11;
   overflow: hidden;
   transition: top 0.5s ease-out;
+}
+
+.fixed-dropdown {
+  position: fixed;
+  left: 0px;
+  top: 100px;
+  bottom: auto;
 }
 
 @media screen and (max-width: 1500px) {
@@ -3907,6 +3914,10 @@ a {
 
   .menu-fixed {
     height: 60px !important;
+  }
+
+  .fixed-dropdown {
+    top: 60px;
   }
 }
 
