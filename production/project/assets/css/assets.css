@@ -164,8 +164,8 @@
 	
 .member_img_holder {
 	background-size: cover;
-	width: 430px;
-	height: 550px;
+	width: 329px;
+    height: 415px;
 	position: relative;
 }
 .team_holder{
@@ -206,7 +206,7 @@
 
 	display: flex;
 	position: absolute;
-	right: -126%;
+	right: -166%;
 	top: 20%;
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 14px;
@@ -258,7 +258,6 @@
 	margin-bottom: 150px;
 }
 .about__lines{
-	margin-bottom: 200px;
 	margin-left: 100px;
 }
 
@@ -287,7 +286,7 @@
 
 .lena{
 	background-image: url(../img/compressed/lenahover.jpg);
-	margin-top: 360px;
+	    margin-top: 230px;
 }
 
 
@@ -297,7 +296,7 @@
 
 .masha{
 	background-image: url(../img/compressed/mashahover.jpg);
-	margin-top: 140px;
+	margin-top: 80px;
 }
 .info_andrew{
 	top: 80%;
@@ -349,7 +348,7 @@
 	margin-top: -30px;
 	z-index: -1;
 }
-@media only screen and (max-width : 1456px) {
+@media only screen and (min-width : 1456px) {
 	.member_line{
 		width: 80px;
 	}
@@ -361,7 +360,7 @@
 	}
 	.member_img_holder{
 	    width: 350px;
-    	height: 470px;
+    	height: 444px;
 	}
 	.member_name{
 		font-size: 18px;
@@ -381,6 +380,9 @@
 	}
 	.about_last_img_holder{
 		margin-top: -20px;
+	}
+	.member__info{
+		right: -137%;
 	}
 }
 
@@ -520,13 +522,15 @@
 }
 
 .pagination_about_b{
-	margin-top: 100px;
+	    margin-top: 220px;
 }
 .img6{
-	background: url(../img/compressed/contr_m.jpg) center center no-repeat;
+	background: url(../img/compressed/upravlenie.jpg) center center no-repeat;
+	background-size: cover;
 }
 .img7{
-	background: url(../img/compressed/startup_m.jpg) center center no-repeat;
+	background: url(../img/compressed/startaper.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 .block__head_title{
@@ -538,3 +542,245 @@
 .text__steps_about_mod{
 	margin-bottom: 30px;
 }
+.text__steps_some{
+	margin-bottom: 10px;
+}
+.block__some_word_mod{
+	margin-bottom: 30px;
+}
+.pagination_about_mod{
+	margin-bottom: 200px;
+}
+.mob_ver_holder{
+	display: none;
+}
+@media only screen and (max-width : 720px) {
+	.main_mas{
+		display: none;
+	}
+	.mob_ver_holder{
+		display: block;
+	}
+	.main_mob{
+		display: none;
+	}
+	.home_img_none{
+		display: none;
+	}
+	.main_title_none{
+		display: none;
+	}
+	.main_mob{
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/main.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-flow: column;
+		text-align: center;
+		height: 600px;
+		margin-bottom: 20px;
+	}
+	.mob_title{
+		font-family: Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: bold;
+		font-size: 77px;
+	}
+	.dscr_mob{
+		font-family: Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: 300;
+		font-size: 17px;
+		letter-spacing: 1.2px;
+	}
+	.concept_mob_holder{
+		margin-bottom: 30px;
+	}
+	.concept_mob{
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		text-align: center;
+		height: 420px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-flow: column;
+		margin-bottom: 30px;
+	}
+	.cat_title{
+		font-family: Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: bold;
+		font-size: 50px;
+	}
+	.cat_subtitle{
+		font-family: Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 1.2;
+	}
+	.text_mob{
+		font-family: Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 1.2;
+		color: #353535;
+		letter-spacing: 1.2px;
+		margin-bottom: 10px;
+	}
+	.dscr_mob_holder{
+		padding: 0 10px;
+	}
+	.mob_link{
+		font-family: Helvetica,Arial,sans-serif;
+		font-weight: bold;
+		font-size: 17px;
+		color: #F94D4D;
+		letter-spacing: 1.2px;
+	}
+	.menu_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img2.jpg);
+	}	
+	.brand_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img3.jpg);
+	}	
+	.design_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img4.jpg);
+	}	
+	.adv_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img5.jpg);
+	}
+	.control_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img6.jpg);
+	}	
+	.startup_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img7.jpg);
+	}
+	.subs_mob{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/compressed/img8.jpg);
+	}	
+	.cat_title_mod{
+		font-size: 40px;
+	}
+	.footer_mob{
+		background: #343434;
+		padding: 40px 20px;
+	    text-align: center
+	}
+	.connect_mobi_holder{
+		margin-bottom: 20px;
+		display: flex;
+		align-content: center;
+		align-items: center;
+
+	}
+	.connect_mobi{
+		color: #F94D4D;
+		font-family: Helvetica,Arial,sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.social_mob{
+		color: white;
+		font-family: Helvetica,Arial,sans-serif;
+		font-size: 12px;
+		margin-right: 20px;
+	}
+	.star_mob{
+		margin-right: 10px;
+	}
+}
+.dscr_prod_holder{
+	display: flex;
+    align-items: center;
+    align-content: center;
+}
+.prod_ds_link, .dscr_prod{
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	letter-spacing: 1.82px;
+	color: #353535;
+	font-weight: bold;
+}
+.prod_ds_link{
+	color: #158EFF;
+}
+.prod_line{
+	border-bottom: 1px solid #000;
+    width: 20px;
+    height: 1px;
+    margin-right: 14px;
+}
+.dscr_prod_holder{
+	margin-bottom: 30px;
+}
+.dscr_prod_holder_clear{
+	margin-bottom: 50px;
+}
+
+.menu__block {
+    width: 70%;
+}
+.clear_num{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 70px;
+}
+
+.logo_pic_eatery{
+	width: 26%;
+}
+
+.special__link:hover{
+	opacity: 0.8;
+}
+
+.left__top{
+	justify-content: flex-start;
+	padding-left: 90px;
+}
+.home_background{
+    width: 100%;
+    min-height: auto;
+}
+
+
+.pagination_about{
+	margin-bottom: 200px;
+}
+
+
+@media only screen and (max-width : 1330px) {
+		.member_img_holder {
+	    background-size: cover;
+	    width: 229px;
+	    height: 289px;
+	    position: relative;
+	}
+	.member__info{
+		right: -234%;
+	}
+	.pagination_about_b {
+    margin-top: 10px;
+	}
+}
+
+.another__title{
+	    width: 100%;
+}
+
+
+
+
+
+
+
+

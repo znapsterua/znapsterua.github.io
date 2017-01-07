@@ -292,3 +292,23 @@ if(document.querySelector('.slider__slick')){
     Slick();
 }
 
+function Fixed(header) {
+    this.header = header;
+    this.helper();
+}
+
+Fixed.prototype.helper = function() {
+    window.addEventListener('scroll', this.move.bind(this)); 
+};
+
+Fixed.prototype.move = function() {
+    if (window.pageYOffset > 100) {
+        this.header.addClass("menu-fixed");
+        this.header.css( "top", "0px" );
+    }else {
+        this.header.removeClass("menu-fixed");
+        this.header.css( "top", "-200px" );
+    }
+};
+
+new Fixed($(".content"));

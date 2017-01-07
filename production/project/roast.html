@@ -82,7 +82,7 @@
 			<div class="content flex">
 				<div class="content__head">
 					<div class="head__logo">
-						<a href="index.html" class="logo__link"><img src="assets/img/compressed/logo2.png" class="link__logo_img"></a>
+						<a class="logo__link" href="index.html"  onclick='Ajax(0, false)'><img src="assets/img/compressed/Canape_logowhite.svg" class="link__logo_img"></a>
 					</div>
 					<div class="head__nav">
 						<ul class="nav__list">
@@ -92,7 +92,7 @@
 									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
 									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
 									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
-									<li class="dropdown__link"><a class="special__link" href="#">Проектирование</a></li>
+									<li class="dropdown__link"><a class="special__link" href="#">Проект</a></li>
 									<li class="dropdown__link"><a class="special__link" href="advert.html">Реклама</a></li>
 									<li class="dropdown__link"><a class="special__link" href="design.html">Дизайн</a></li>
 									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
@@ -175,13 +175,22 @@
 				</div>
 			</div>
 			<div class="about__contact">
-				<p class="contact__inform">
-					Сoffee & Bar</br>
-					Харьков, Сумская 5</br>
-					Реализован 21.09.2016</br>
-					55 м2</br>
-					<span class='inform__color'>Харьков, Сумская 5</span></br>
-				</p>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Кофейное производство</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Харьков</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">В процессе реализации</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">70 м2</p>
+				</div>
 				<a href="#" onclick="Show()" class="inform__btn">Связаться с нами</a>
 			</div>
 		</div>
@@ -265,6 +274,13 @@
 				<img class="img__about" src="assets/img/compressed/roast6.jpg">
 			</div>
 		</div>
+		<div class="clear_num">
+				<ul class="pic__inter">
+					<li class="inter__img">
+						<img class="img__dev" src="assets/img/compressed/roastnew.jpg">
+					</li>
+				</ul>
+			</div>
 	</div>
 	
 	<div class="menu__footer">
@@ -289,7 +305,7 @@
 		</div>
 		<div class="modal__header">
 			<h2 class="header__title">Canape</h2>
-			<p class="header__dscr">Рестранное агенство</p>
+			<p class="header__dscr">Ресторанное агенство</p>
 		</div>
 		<div class="modal__content">
 			<div class="content__img" onclick="location.href='project.html'">
